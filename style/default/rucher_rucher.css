@@ -1,0 +1,50 @@
+#contenu_rucher{
+  border-style: groove;
+  border-width: 5px;
+  background-color: white;
+  position: relative;
+  padding : 10px; 
+  left : 5%;
+  width:90%;
+  margin-top : 50px;
+}
+
+#contenu_rucher ul {
+  vertical-align: bottom;
+}
+#contenu_rucher li {
+    display: inline-block;
+    text-align:center;
+  margin-right : 10px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 120px;
+    /*height: 145px;*/
+   /* border: 3px solid #73AD21;  */
+}  
+#contenu_Api img{
+   
+   width: 120px;
+  border : 0px;
+  padding : 5px;
+}
+#contenu_rucher img:hover{
+   background-color: #ccffff;
+   
+}
+#contenu_rucher a{
+   
+   text-decoration : none;
+
+}
+#contenu_rucher hr{
+  margin : auto;
+  line-height: 1;
+  color : red;
+  width : 60%;
+}
+.logo a:hover
+{
+  color : blue;
+  font-weight : bold;
+}

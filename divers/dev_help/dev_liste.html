@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <script src="script/rucher.js"></script>
+<link rel="stylesheet" class="liens" href="dev_liste.css">
+    <title>Dev_liste</title>
+  </head>
+<body><h1>Listes des pages php du site</h1>
+<ol id="mozToc">
+<li>Listes des pages php du site<ol>
+<li><a href="#achat">Page achat.php</a></li>
+<li><a href="#affecte_essaim">Page affect_essaim.php</a></li>
+<li><a href="#ajout_ruche">Page ajout_ruche.php</a></li>
+<li><a href="#ajoutrucher">Page ajoutrucher.php</a></li>
+<li><a href="#bilan_ruche">Page bilan_ruche.php</a></li>
+<li><a href="#creer_essaim.php">Page creer_essaim.php</a></li>
+<li><a href="#datalogger">Page datalogger.php</a></li>
+<li><a href="#declare_rucher">Page declare_rucher.php</a></li>
+<li><a href="#edit_rucher">Page edit_rucher.php</a></li>
+<li><a href="#genereQR">Page genereQR.php</a></li>
+<li><a href="#gest_apparence">Page gest_apparence.php</a></li>
+<li><a href="#gestion_maladie">Page gestion_maladie.php</a></li>
+<li><a href="#gestion_miel">Page gestion_miel.php</a></li>
+<li><a href="#index">Page index.php</a></li>
+<li><a href="#info_api">Page info_api.php</a></li>
+<li><a href="#info_rucher">Page info_rucher.php</a></li>
+<li><a href="#loaddatalogger">Page loaddatalogger.php</a></li>
+<li><a href="#mdp_oubli">Page mdp_oubli.php</a></li>
+<li><a href="#modif_ruche">Page modif_ruche.php</a></li>
+<li><a href="#modif_rucher">Page modif_rucher.php</a></li>
+<li><a href="#new_mdp">Page new_mdp.php</a></li>
+<li><a href="#parametres">Page parametres.php</a></li>
+<li><a href="#recolte">Page recolte.php</a></li>
+<li><a href="#signIn">Page signIn.php</a></li>
+<li><a href="#stat_apiculteur">Page stat_apiculteur.php</a></li>
+<li><a href="#stat_datalogger">Page stat_datalogger.php</a></li>
+<li><a href="#stat_hygro">Page stat_hygro.php</a></li>
+<li><a href="#stat_poids">Page stat_poids.php</a></li>
+<li><a href="#stat_recolte">Page stat_recolte.php</a></li>
+<li><a href="#stat_ruche">Page stat_ruche.php</a></li>
+<li><a href="#stat_rucher">Page stat_rucher.php</a></li>
+<li><a href="#stat_temp">Page stat_temp.php</a></li>
+<li><a href="#stat_visite">Page stat_visite.php</a></li>
+<li><a href="#supp_essaim">Page supp_essaim.php</a></li>
+<li><a href="#systeme_info">Page systeme_info.php</a></li>
+<li><a href="#update_api">Page update_api.php</a></li>
+<li><a href="#visite">Page visite.php</a></li>
+<li><a href="#voir_essaim">Page voir_essaim.php</a></li>
+<li><a href="#voir_info_ruche">Page voir_info_ruche.php</a></li>
+<li><a href="#voir_ruche">Page voir_ruche.php</a></li>
+<li><a href="#voir_rucher">Page voir_rucher.php</a></li></ol></li></ol>
+<p><br></p>
+<div class="page">
+<h2><a name="achat">Page achat.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> :achat.tpl</p>
+<p><span class="souligne">But</span> : G&egrave;re la liste des achats</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+<h2><a name="affecte_essaim">Page affect_essaim.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : essaim_modifie.tpl, essaim_erreur.tpl , erreur_essaim_suppression.tpl</p>
+<p><span class="souligne">But</span> : G&egrave;re la proc&eacute;dure de suppression et de r&eacute;affectation de l'essaim &agrave; une ruche.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#supp_essaim">supp_essaim.php</a>, <a class="liens" href="#voir_essaim">voir_essaim.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">  
+<h2><a name="ajout_ruche">Page ajout_ruche.php<br></a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : ruche_ajoutee.tpl, ruche_erreur.tpl, ajout_ruche.tpl, ruche_existe.tpl</p>
+<p><span class="souligne">But</span> : G&egrave;re l'ajout d'une ruche au rucher.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_rucher">voir_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+<h2><a name="ajoutrucher">Page ajoutrucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : rucher_existe.tpl, rucher_ajout.tpl, rucher_erreur.tpl, add_rucher.tpl</p>
+<p><span class="souligne">But</span> : G&egrave;re la saisie et l'inscription d'un rucher</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="bilan_ruche">Page bilan_ruche.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : bilan_ruche.tpl</p>
+<p><span class="souligne">But</span> : affiche la page donnant acc&egrave;s au fichier pdf du bilan de la ruche.</p>
+<p><span class="souligne">Provenance</span>: <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> :documents/edit_bilanpdf.php (ouvre une page suppl&eacute;mentaire pour le t&eacute;l&eacute;chargement du pdf)</p>
+</div>  
+<div class="page">
+  <h2><a name="creer_essaim.php">Page creer_essaim.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> :essaim_existe.tpl, essaim_ajoute.tpl, essaim_erreur.tpl</p>
+<p><span class="souligne">But</span> : Cr&eacute;er un essaim et l'affecter &agrave; la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_essaim">voir_essaim.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="datalogger">Page datalogger.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : datalogger_ok.tpl, erreur_datalogger.tpl, datalogger.tpl</p>
+<p><span class="souligne">But</span> : G&eacute;n&eacute;rer le fichier de configuration du datalogger</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#loaddatalogger">loaddatalogger.php</a> pour r&eacute;cup&eacute;rer les donn&eacute;es d'un logger</p>
+</div>  
+<div class="page">
+  <h2><a name="declare_rucher">Page declare_rucher</a>.php</h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : declare_rucher.tpl</p>
+<p><span class="souligne">But</span> : Affiche les informations essentielles &agrave; la d&eacute;claration du rucher.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#edit_rucher">edit_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : documents/declare_rucherpdf.php dans une nouvelle page</p>
+</div>  
+<div class="page">
+  <h2><a name="edit_rucher">Page edit_rucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : edit_rucher.tpl</p>
+<p><span class="souligne">But</span> : affiche les &eacute;ditions possibles du rucher</p>
+<p><span class="souligne">Provenance</span> :<a class="liens" href="#voir_rucher"> voir_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#declare_rucher">declare_rucher.php</a>, <a class="liens" href="#stat_rucher">stat_rucher.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="genereQR">Page genereQR.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : aucun</p>
+<p><span class="souligne">But</span> : g&eacute;n&egrave;re le QR Code de la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_info_ruche">voir_info_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="gest_apparence">Page gest_apparence.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : apparence.tpl</p>
+<p><span class="souligne">But</span> : change l'apparence du logiciel</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#parametres">parametres.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="gestion_maladie">Page gestion_maladie.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : ges_maladie.tpl</p>
+<p><span class="souligne">But</span> : g&egrave;re la liste des maladies pour l'apiculteur</p>
+<p><span class="souligne">Provenance</span> :  <a class="liens" href="#parametres">parametres.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="gestion_miel">Page gestion_miel.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : ges_miel.tpl</p>
+<p><span class="souligne">But</span> : Gestion de la liste des types de miel.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#parametres">parametres.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="index">Page index.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : accueil.tpl, index.tpl, erreur_version.tpl</p>
+<p><span class="souligne">But</span> : page d'accueil du syst&egrave;me.</p>
+<p>G&egrave;re la connexion de l'utilisateur et affiche la liste des ruchers.</p>
+<p>Provenance : rien</p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#achat">achat.php</a>, <a class="liens" href="#voir_rucher">voir_rucher.php</a>, <a class="liens" href="#ajoutrucher">ajoutrucher.php</a>, <a class="liens" href="#info_api">info_api.php</a>, <a class="liens" href="#parametres">parametres.php</a>, <a class="liens" href="#datalogger">datalogger.php</a>, <a class="liens" href="#stat_apiculteur">stat_apiculteur.php</a>, <a class="liens" href="#signIn">SignIn.php</a>, <a class="liens" href="#mdp_oubli">mdp_oubli.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="info_api">Page info_api.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> :info_api.tpl</p>
+<p><span class="souligne">But</span> : Affiche les informations de l'apiculteur</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#update_api">update_api.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="info_rucher">Page info_rucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : info_rucher.tpl</p>
+<p><span class="souligne">But</span> : affiche les informations du rucher</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_rucher">voir_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#modif_rucher">modif_rucher.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="loaddatalogger">Page loaddatalogger.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : loaddatalogger.tpl,loaddtl_ok.tpl, err_ver_dtl.tpl, </p>
+<p><span class="souligne">But</span> : R&eacute;cup&egrave;re les informations stock&eacute;es dans un fichier datalogger pour les inclure dans la base de donn&eacute;es</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#datalogger">datalogger.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="mdp_oubli">Page mdp_oubli.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : erreur_recov_mdp.tpl, new_mdp_lost.tpl, mdp.tpl</p>
+<p><span class="souligne">But</span> : Permet de r&eacute;g&eacute;n&eacute;rer un mot de passe si celui ci a &eacute;t&eacute; oubli&eacute;. </p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#new_mdp">new_mdp.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="modif_ruche">Page modif_ruche.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : mod_ruche_ok.tpl, mod_ruche_fail.tpl, modif_ruche.tpl</p>
+<p><span class="souligne">But</span> : Permet la modification des informations d'une ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_info_ruche">voir_info_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="modif_rucher">Page modif_rucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : mrucherOK.tpl, mrucherfailed.tpl, modif_rucher.tpl</p>
+<p><span class="souligne">But</span> : modifie les informations du rucher.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#info_rucher">info_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="new_mdp">Page new_mdp.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : mdp_ok.tpl, erreur_recov_mdp.tpl, retour_index.tpl</p>
+<p><span class="souligne">But</span> : Stocke dans la base de donn&eacute;es le nouveau mot de passe saisi</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#mdp_oubli">mdp_oubli.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="parametres">Page parametres.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : parametres.tpl</p>
+<p><span class="souligne">But</span> : affiche la liste des param&egrave;tres modifiables</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#gestion_maladie">gestion_maladie.php</a>, <a class="liens" href="#gestion_miel">getion_miel.php</a>, <a class="liens" href="#gest_apparence">gest_apparence.php</a>, <a class="liens" href="#systeme_info">systeme_information.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="recolte">Page recolte.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : recolte_ajoutee.tpl, recolte_erreur.tpl, recolte.tpl</p>
+<p><span class="souligne">But</span> : ajoute une r&eacute;colte &agrave; la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="signIn">Page signIn.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : api_existe.tpl, api_ajout.tpl, api_erreur.tpl, apiculteur.tpl</p>
+<p><span class="souligne">But</span> : permet l'inscription d'un apiculteur</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_apiculteur">Page stat_apiculteur.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : stat_api.tpl</p>
+<p><span class="souligne">But</span> : affiche le bilan d'exploitation de l'apiculteur et quelques informations sur les ruches</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_datalogger">Page stat_datalogger.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : nostat_datalogger.tpl, stat_datalogger.tpl, stat_ruche_rech_data.tpl</p>
+<p><span class="souligne">But</span> : affiche les informations relatives au datalogger sur la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_hygro">Page stat_hygro.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : no_hygro.tpl, stat_poids.tpl, stat_ruche_rech_hygro.tpl</p>
+<p><span class="souligne">But</span> : affiche les statistiques de mesure hygrom&eacute;triques de la ruche en fonction des visites et du datalogger</p>
+<p><span class="souligne"><span class="souligne">Provenance</span></span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_poids">Page stat_poids.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : no_poids.tpl, stat_poids.tpl, stat_ruche_rech_pesee.tpl</p>
+<p><span class="souligne">But</span> : affiche les statistiques de mesure de poids de la ruche en fonction des visites et du datalogger</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_recolte">Page stat_recolte.php</a></h2>
+  <p><span class="souligne">Templates  utilis&eacute;s</span> : no_recolte.tpl, stat_recolte_ruche.tpl, stat_ruche_rech_poids.tpl</p>
+<p><span class="souligne">But</span> : affiche les statistiques de r&eacute;coltes de la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_ruche">Page stat_ruche.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : stat_ruche.tpl</p>
+<p><span class="souligne">But</span> : Affiche la liste des statistiques disponibles pour la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#stat_visite">stat_visite.php</a>, <a class="liens" href="#stat_temp">stat_temp.php</a>, <a class="liens" href="#stat_poids">stat_poids.php</a>, <a class="liens" href="#stat_hygro">stat_hygro.php</a>, <a class="liens" href="#stat_recolte">stat_recolte.php</a>, <a class="liens" href="#stat_datalogger">stat_datalogger.php</a>, <a class="liens" href="#bilan_ruche">bilan_ruche.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="stat_rucher">Page stat_rucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : stat_rucher.tpl</p>
+<p><span class="souligne">But</span> : Affiche les statistiques du rucher.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#edit_rucher">edit_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : documents/stat_rucher_pdf.php dans une nouvelle fen&ecirc;tre</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_temp">Page stat_temp.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : no_temp.tpl, stat_temp.tpl, stat_ruche_rech_temp.tpl</p>
+<p><span class="souligne">But</span> : affiche les statistiques de temp&eacute;rature de la ruche en fonction des visites et du datalogger</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="stat_visite">Page stat_visite.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : stat_visite.tpl, rech_visite.tpl</p>
+<p><span class="souligne">But</span> : Affiche les informations sur les visites de la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="supp_essaim">Page supp_essaim.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : supp_aff_essaim.tpl</p>
+<p><span class="souligne">But</span> : Affiche la liste des essaims disponibles&nbsp;</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_essaim">voir_essaim.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#affecte_essaim">affecte_essaim.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="systeme_info">Page systeme_info.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : systeme_info.tpl</p>
+<p><span class="souligne">But</span> : Affiche les informations du syst&egrave;me</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="update_api">Page update_api.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : modif_api_ok.tpl, modif_api_fail.tpl, update_api.tpl</p>
+<p><span class="souligne">But</span> : Modifier les informations de l'apiculteur</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#info_api">info_api.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="visite">Page visite.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : visite_ajoutee.tpl, visite_erreur.tpl, visite.tpl</p>
+<p><span class="souligne">But</span>: Ajoute une visite &agrave; la ruche</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : rien</p>
+</div>  
+<div class="page">
+  <h2><a name="voir_essaim">Page voir_essaim.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : ajout_essaim.tpl, voir_essaim.tpl</p>
+<p><span class="souligne">But</span> : Permet d'afficher les informations de l'essaim de la ruche, de le supprimer ou d'en affecter un. Si il n'y a pas d'essaim, alors la page permet l'ajout de celui-ci</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#affecte_essaim">affecte_essaim.php</a>, <a class="liens" href="#creer_essaim.php">creer_essaim.php</a>, <a class="liens" href="#supp_essaim">supp_essaim.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="voir_info_ruche">Page voir_info_ruche.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : voir_info_ruche.tpl</p>
+<p><span class="souligne">But</span> : Affiche les informations de la ruche.</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#modif_ruche">modif_ruche.php</a>, <a class="liens" href="#genereQR">genereQR.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="voir_ruche">Page voir_ruche.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : voir_ruche.tpl</p>
+<p><span class="souligne">But</span> : Interface de gestion de la ruche. On y affiche les informations de celle-ci et toutes les fonctions possibles</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#voir_rucher">voir_rucher.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#voir_essaim">voir_essaim.php</a>, <a class="liens" href="#voir_info_ruche">voir_info_ruche.php</a>, <a class="liens" href="#visite">visite.php</a>, <a class="liens" href="#recolte">recolte.php</a>, <a class="liens" href="#stat_ruche">stat_ruche.php</a></p>
+</div>  
+<div class="page">
+  <h2><a name="voir_rucher">Page voir_rucher.php</a></h2>
+<p><span class="souligne">Templates  utilis&eacute;s</span> : voir_rucher.tpl</p>
+<p><span class="souligne">But</span> : Interface de gestion du rucher. On y affiche les informations de celui-ci et toutes les fonctions possibles</p>
+<p><span class="souligne">Provenance</span> : <a class="liens" href="#index">index.php</a></p>
+<p><span class="souligne">Donne acc&egrave;s &agrave;</span> : <a class="liens" href="#voir_ruche">voir_ruche.php</a>, <a class="liens" href="#ajout_ruche">ajout_ruche.php</a>,<a class="liens" href="#info_rucher"> info_rucher.php</a>,<a class="liens" href="#edit_rucher"> edit_rucher.php</a></p>
+  </div>
+</body></html>

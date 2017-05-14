@@ -1,0 +1,55 @@
+#modif_btnr{
+	position : absolute;
+	top : 100px;
+	left : 400px;
+}
+#modif_btnr a {
+	text-decoration : none;
+	background : blue;
+	border : 2px;
+	border-radius : 5px 5px 5px 5px;
+	color : white;
+	padding : 5px 10px 5px 10px;
+}
+#modif_btnr a:hover {
+	background : red;
+}
+#QRCode
+{
+	background : blue;
+	color : white;
+	text-decoration : none;
+	padding : 3px;
+	border-radius : 5px 5px 5px 5px;
+}
+#QRCode:hover
+{
+	background : red;
+}
+#dropdown{
+	width : 100%;
+	display : none;
+}
+#infoEssaim{
+	width : 100%;
+	display : none;
+}
+.spoiler{
+	background : blue;
+	width : 30%;
+	text-align : center;
+	margin : auto;
+	height : 30px;
+	color : white;
+	line-height : 30px;
+	border-radius : 5px 5px 5px 5px;
+}
+.spoiler:hover{
+	color : red;
+	cursor : pointer;
+}
+.spoiler img {
+	padding-left:10px;
+	padding-right:10px;
+	vertical-align : text-top;
+}

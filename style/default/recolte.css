@@ -1,0 +1,75 @@
+.groupbox {
+			padding: 0px 15px;
+			background: #E0E0E0;
+			border: 1px;
+			border-style: solid;
+			width: 60%;
+			margin : 10px;
+			}
+.groupbox h1
+{
+	color : red;
+	margin : 0px;
+}
+.groupbox input {
+	background: #f2f2f2;
+	border: 0 none;
+	text-align : left;
+}
+.groupbox textarea {
+	background: #f2f2f2;
+	border: 0 none;
+	text-align : left; 
+}
+.groupbox  select {
+	background: #f2f2f2;
+	border: 0 none;
+	text-align : left;
+}
+.miel {
+	display: inline-block;
+	width: 40%;
+    padding-left : 0px;
+    margin-right: 20px;
+     
+}
+#CacheMiel {
+	display : none;
+}
+#MonBouton{
+	border: 2px solid #73AD21;
+	height:30px;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+#MonBouton:hover{
+	border: 2px solid #73AD21;
+	height:30px;
+	border-radius: 15px;
+	box-shadow: 0 5px #999;
+}
+#boutonM {
+
+	border: 2px solid #73AD21;
+	width: 150px;
+	height:30px;
+	padding : 10px;
+	text-align : center;
+	background: #e8e8b9;
+	vertical-align:middle;
+	vertical-align:middle;
+	text-decoration:none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+#boutonM:hover {
+	color : white;
+	background: green;
+}
+#boutonM:active {
+	color : yellow;
+	width: 145px;
+height:20px;
+	background: green;
+	box-shadow: 0 1px #999;
+}

@@ -1,0 +1,21 @@
+function Change(numero,objet)
+{
+	LechampId="visite"+numero;
+	VisuId='visu'+numero;
+	Etat=document.getElementById(VisuId).value;
+	lechamp=document.getElementById(LechampId);
+	if(Etat==0)
+	{	  
+		lechamp.style.display="block";
+		document.getElementById(VisuId).value=1;
+		objet.innerHTML='Cacher';
+		objet.style.cursor='zoom-out';
+	}
+	else
+	{
+		lechamp.style.display="none";
+		document.getElementById(VisuId).value=0;
+		objet.innerHTML='Afficher';
+		objet.style.cursor='zoom-in';
+	}
+}

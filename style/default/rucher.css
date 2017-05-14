@@ -1,0 +1,143 @@
+body
+{
+	background: #f2f2f2;
+	background-image: url("images/fond.jpg");
+}
+#menu {
+	display: inline-block;
+	background : #ed9700;
+	width : 100%;
+	text-align : right;
+	padding-top : 15px;
+	padding-bottom : 7px;
+	border-radius: 15px 15px 15px 15px;
+}
+#menu ul {
+	list-style-type: none;
+	margin : 0;
+	padding : 0;
+}
+#menu ul li{
+	display: inline;
+	padding-left : 10px;
+	margin-left :5px;
+	margin-right : 10px;
+	
+}
+#menu ul li input{
+	background: #f2f2f2;
+	margin-right :10px;
+}
+#menu ul li a{
+	background :#ae8b00;
+	padding : 5px;
+	text-decoration : none;
+	color:white;
+	border-radius: 5px 5px 5px 5px;
+}
+#mdp {
+	
+	padding-top : 5px;
+	margin : 2px 0px 0px 0px;
+	padding-bottom : 0px;
+	height : 20px;
+	width : 80%;
+	position : relative;
+	left : 0px;
+	
+}
+#mdp a {
+	text-decoration : none;
+	color : black;
+	background :#ae8b00;
+	padding :3px;
+	border-radius: 5px;
+}
+#mdp a:hover {
+	color : white;
+}
+
+#titre {
+	text-align : center;
+}
+
+.pboutons_formulaires{
+	width:100%;
+	padding :20px;
+	
+}
+.boutons_formulaires {
+	margin : 0 50px 0 50px;
+}
+#accueil_appi{
+	padding-top : 30px;
+}
+#contenu_Api{
+  border-style: groove;
+  border-width: 5px;
+  background-color: white;
+  position: relative;
+  padding : 10px; 
+  left : 5%;
+  width:90%;
+  margin-top : 30px;
+  margin-bottom : 20px;
+}
+#contenu_Api ul {
+  vertical-align: bottom;
+}
+#contenu_Api li {
+    display: inline-block;
+    text-align:center;
+    margin-right : 10px;
+    width: 120px;
+}  
+#contenu_Api img{
+   
+   width: 120px;
+  border : 0px;
+  padding : 5px;
+}
+#contenu_Api img:hover{
+   background-color: #ccffff;
+   
+}
+
+#contenu_Api a{
+   
+   text-decoration : none;
+
+}
+.mage a:hover
+{
+  color : blue;
+  font-weight : bold;
+}
+#contenu_Api hr{
+  margin : auto;
+  line-height: 1;
+  color : red;
+  width : 60%;
+}
+.item {
+	color : red;
+}
+.ChampsForm{
+	background: #f2f2f2;
+	border: 0 none;
+	text-align : left;
+}
+#LienRetour {
+	text-decoration : none;
+	background : #e8e8b9;
+	padding : 3px;
+	border-radius : 5px;
+	margin-left : 25px;
+	color : black;
+}
+#LienRetour:hover {
+	border-style : groove;
+	background : #dadaae;
+	border-color : black;
+	color : red;
+}

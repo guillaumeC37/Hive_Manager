@@ -1,0 +1,14 @@
+#affecte_field {
+	width : 80%;
+}
+
+.c1{
+	display: inline-block;
+	width : 45%;
+}
+#avertissement{
+	position : relative;
+	top : -70px;
+	color : red;
+	font-weight: bold;
+}

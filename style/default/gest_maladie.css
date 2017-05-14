@@ -1,0 +1,26 @@
+#ListeMaladie {
+	background-image: url("images/fond2.jpg"); 
+	width : 25%;
+	border : 3px;
+	border-style : inset;
+	padding-left : 5px;
+	margin : 15px;
+}
+#ListeMaladie ul{
+	padding-left : 15px;
+	margin : 5px 0px 5px 0px;
+	list-style-type: none;
+}
+#ListeMaladie li{
+	padding : 0px;
+	margin : 2px;
+	color : black;
+}
+#champ{
+	width : 30%;
+}
+.ligneMaladie{
+	margin : 2px;
+	width : 100%;
+	padding : 0px;
+}

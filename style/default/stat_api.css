@@ -1,0 +1,29 @@
+td, th{
+	text-align : center;
+	padding : 3px;
+}
+tr:hover
+{
+	background-color : #828282;
+}
+tr:nth-child(even)
+{
+	background-color: #f2f2f2;
+}
+tr:nth-child(even):hover
+{
+	background-color: #828282;
+}
+th
+{
+	background-color : #d0e1fa;
+}
+.titre_table
+{
+	font-weight : bold;
+	text-decoration : underline;
+}
+.infos 
+{
+	text-decoration : underline;
+}

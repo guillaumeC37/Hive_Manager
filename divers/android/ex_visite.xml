@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<visites>
+	<version>1.0B</version>
+	<visite>
+		<idRuche>02558</idRuche>
+		<temps>1</temps>
+		<Hygro>85</Hygro>
+		<TempExt>25.5</TempExt>
+		<Poids>12.5</Poids>
+		<ComportementEssaim>sddfsdfqsdgsdghdfghsdhdfghdfgfjhkuyiomoptyuityu</ComportementEssaim>
+		<Population>fgsdfgdfhdfghfdghdfghdfgh</Population>
+		<MaladieID>1</MaladieID>
+		<IsMaladie>0</IsMaladie>
+		<IsReine>0</IsReine>
+		<IsNourrissage>0</IsNourrissage>
+		<Nourrissage>sfdfgsdfg</Nourrissage>
+		<IsTravaux>0</IsTravaux>
+		<Notes>ddjghdfg sdgiuioguerg jrgjergj eirjgeprg kgk s dhgq gjdfgdgk ozetmerughmetergjfghsem g</Notes>
+	</visite>
+	<visite>
+		<idRuche>02558</idRuche>
+		<temps>1</temps>
+		<Hygro>85</Hygro>
+		<TempExt>25.5</TempExt>
+		<Poids>12.5</Poids>
+		<ComportementEssaim>sddfsdfqsdgsdghdfghsdhdfghdfgfjhkuyiomoptyuityu</ComportementEssaim>
+		<Population>fgsdfgdfhdfghfdghdfghdfgh</Population>
+		<MaladieID>1</MaladieID>
+		<IsMaladie>0</IsMaladie>
+		<IsReine>0</IsReine>
+		<IsNourrissage>0</IsNourrissage>
+		<Nourrissage>sfdfgsdfg</Nourrissage>
+		<IsTravaux>0</IsTravaux>
+		<Notes>ddjghdfg sdgiuioguerg jrgjergj eirjgeprg kgk s dhgq gjdfgdgk ozetmerughmetergjfghsem g</Notes>
+	</visite>
+</visites>

@@ -1,0 +1,39 @@
+.info_item{
+	color : red;
+	border : 1px;
+	display : inline-block;
+	border-style : hidden;
+	padding : 3px 3px 3px 3px;
+	background-color : #f8f8f7;
+	border-color : black;
+	border-radius: 5px 5px 5px 5px;
+	font-weight : bold;
+}
+#Observations{
+	border : 3px;
+	display : block;
+	width : 40%;
+	background-color : #f8f8f7;
+	padding : 0px 0px 5px 5px;
+	border-style : inset;
+}
+#modif_btn{
+	position : absolute;
+	top : 200px;
+	left : 400px;
+}
+#modif_btn a {
+	text-decoration : none;
+	background : blue;
+	border : 2px;
+	border-radius : 5px 5px 5px 5px;
+	color : white;
+	padding : 5px 10px 5px 10px;
+}
+#modif_btn a:hover {
+	background : red;
+}
+#btn_validF{
+	width : 20%;
+	margin : auto;
+}

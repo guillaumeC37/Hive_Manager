@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+	<link rel="stylesheet" href="../style/rucher.css">
+    <title>Visite</title>
+  </head>
+  <body>
+    <h1 id="titre">Ajout d'une visite</h1>
+	<form name="visite">
+    <p><label for="DateVisite">Date de la visite : </label>
+      <select name="DateVisite">
+        <option>toto</option>
+      </select>
+    </p>
+    <div id="Observations" class="groupbox">
+      <h1>Observations</h1>
+      <p><label for="climat">temps : </label>
+        <select name="climat">
+          <option>toto</option>
+        </select>
+      </p>
+      <p><label for="Hgro">Hygrométrie :&nbsp;</label><input name="Hygro" type="text"></p>
+      <p><label for="temp">Température :&nbsp;</label><input name="temp" type="text"></p>
+      <p><label for="poids">Poids :&nbsp;</label><input name="poids" type="text"></p>
+    </div>
+    <div id="Essaim" class="groupbox">
+      <h1>Essaim</h1>
+      <p><label for="comportement">Comportement de l'essaim :&nbsp;</label><input name="comportement" type="text"></p>
+      <p><label for="population">Population :&nbsp;</label><input name="population" type="text"></p>
+      <p><input name="maladie" value="true" type="checkbox">Maladie&nbsp;
+        <select name="maladielist">
+          <option>toto</option>
+        </select>
+      </p>
+      <p>Ajouter une maladie</p>
+      <p><input name="reine" value="true" type="checkbox">&nbsp;Reine visible</p>
+    </div>
+    <p><input name="nourissage" value="true" type="checkbox">&nbsp;<label for="nourrissage_text">Nourrissage:&nbsp;</label><input name="nourrissage_text" type="text"></p>
+    <p><input name="travaux" value="true" type="checkbox">&nbsp;Travaux à prévoir</p>
+    <p>Notes&nbsp;<textarea name="notes"></textarea></p>
+    <p><input value="Valider" name="Submit" type="submit"><input value="Annuler"
+
+        name="cancel" type="reset"></p>
+   </form>   
+  </body>
+</html>

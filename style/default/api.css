@@ -1,0 +1,38 @@
+#adresseApi fieldset{
+  background : white;
+  width : 25%;
+  border : 3px;
+  border-style : groove;
+  padding : 2px 0px 2px 20px;
+}
+#adresseApi fieldset p {
+  padding : 0px;
+  margin : 0px;
+}
+#adresseApi {
+	margin-left : 20px;
+}
+.info_api {
+	border-radius : 5px;
+	padding : 2px;
+	font-weight : bold;
+	color : black;
+}
+#ModifInfo_Api {
+	text-decoration : none;
+	background : #e6d3a9;
+	padding : 3px;
+	border-radius : 5px;
+	display : block;
+	width : 180px;
+	text-align : center;
+	margin : auto;
+	color : black;
+}
+#ModifInfo_Api:hover {
+	border-style : groove;
+	background : #cebd97;
+	border-color : black;
+	font-weight : bold;
+	color : red;
+}

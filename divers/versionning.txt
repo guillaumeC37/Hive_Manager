@@ -1,0 +1,6 @@
+Version 0.1A :
+Création du système
+Version 0.2A :
+Ajout personnalisation de l'affichage via css
+transformation de la version 0.2A en 1.0B
+Version 1.1B : gestion d'android. Compatible avec la 1.0B.

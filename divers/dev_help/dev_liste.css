@@ -1,0 +1,29 @@
+body
+{
+	background-image: url("fond.jpg");
+}
+.page
+{
+	border-style : groove;
+	width : 90%;
+	margin : 10px;
+	padding :5px;
+}
+.liens {
+	border-style : ridge;
+	padding : 2px;
+	display : inline-block;
+	margin : 2px;
+	/*border-width : 1px;*/
+	background-color : #e5d98a;
+	border-color : black;
+	text-decoration : none;
+}
+h2
+{
+	text-align : center;
+}
+.souligne
+{
+	text-decoration : underline;
+}

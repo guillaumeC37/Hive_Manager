@@ -1,0 +1,17 @@
+.info_item {
+	color : red;
+	border : 1px;
+	display : inline-block;
+	border-style : hidden;
+	padding : 3px 3px 3px 3px;
+	background-color : #f8f8f7;
+	border-color : black;
+	border-radius: 5px 5px 5px 5px;
+	font-weight : bold;
+}
+#informations{
+	border :3px;
+	border-style:groove;
+	padding-left : 10px;
+	width : 80%;
+}

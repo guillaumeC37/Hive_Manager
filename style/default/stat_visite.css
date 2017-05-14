@@ -1,0 +1,50 @@
+.NewVisite{
+}
+.InfoVisite{
+	background-image: url("images/fond2.jpg");
+	border-style : inset;
+	border-width : 3px;
+	border-radius : 5px;
+	display : none;
+	padding : 2px;
+	width : 60%;
+}
+.voir{
+	margin : 0px 0px 0px 50px;
+	background : #9f9f9f;
+	padding : 3px;
+	border-radius : 3px;
+}
+.voir:hover{
+	color : red;
+	cursor : zoom-in;
+	background : #4f4f4f;
+}
+.InfoVisite fieldset{
+	width : 40%;
+	padding : 2px 0px 2px 5px;
+	margin : 5px;
+}
+.InfoVisite p {
+	margin : 0px;
+	padding : 1px;
+}
+.definition {
+	color : red;
+	text-decoration : underline;
+}
+.notes {
+	display : inline-block;
+	background : white;
+	width : 40%;
+	border-style : inset;
+	margin : 7px;
+	padding : 10px;
+	border-width : 2px;
+}
+.EnteteVisite {
+	background : #efefef;
+	width : 21%;
+	padding-bottom : 1px;
+	margin : 10px;
+}
