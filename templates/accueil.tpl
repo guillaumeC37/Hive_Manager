@@ -23,33 +23,34 @@
 	    
 	  {foreach from=$liste_rucher item=infos}
 	    <li>
-            <p><div class="mage"> <a href="#" onclick="ouvre_rucher({$infos.ID_RUCHER})"><img src="images/{$infos.Image}.png">{$infos.NOM_RUCHER}</a></div></p>
+            <span class="mage"> <a href="#" onclick="ouvre_rucher({$infos.ID_RUCHER})"><img src="images/{$infos.Image}.png">{$infos.NOM_RUCHER}</a></span>
         </li>
 	  {/foreach}
         <li>
-          <p><div class="mage"><a href="ajoutrucher.php"><img src="images/add_rucher.png">Ajouter un rucher</a></div></p>
+          <p><span class="mage"><a href="ajoutrucher.php"><img src="images/add_rucher.png">Ajouter un rucher</a></span></p>
         </li>
+		</ul>
       </form>
       <hr>
       <p class="item">Divers</p>
       <ul>
         <li>
-          <p><div class="mage"><a href="info_api.php"><img src="images/information.png">Informations</a></div></p>
+          <span class="mage"><a href="info_api.php"><img src="images/information.png">Informations</a></span>
         </li>
 		<li>
-          <p><div class="mage"><a href="parametres.php"><img src="images/parametre.png">Param&egrave;tres</a></div></p>
+          <p><span class="mage"><a href="parametres.php"><img src="images/parametre.png">Param&egrave;tres</a></span></p>
         </li>
         <li>
-          <p><div class="mage"><a href="achat.php"><img src="images/achats.png">achats</a></div></p>
+          <p><span class="mage"><a href="achat.php"><img src="images/achats.png">achats</a></span></p>
         </li>
         <li>
-          <p><div class="mage"><a href="datalogger.php"><img src="images/sdcard.png">Datalogger</a></div></p>
+          <p><span class="mage"><a href="datalogger.php"><img src="images/sdcard.png">Datalogger</a></span></p>
         </li>
 		<li>
-          <p><div class="mage"><a href="stat_apiculteur.php"><img src="images/stats.png">Statistiques</a></div></p>
+          <p><span class="mage"><a href="stat_apiculteur.php"><img src="images/stats.png">Statistiques</a></span></p>
         </li>
 		<li>
-          <p><div class="logo"><a href="aide.php?Id_Page=1" target="_blank"><img src="images/help.png">Aide</a></div></p>
+          <p><span class="logo"><a href="aide.php?Id_Page=1" target="_blank"><img src="images/help.png">Aide</a></span></p>
         </li>
       </ul>
     </div>

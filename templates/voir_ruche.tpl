@@ -21,21 +21,19 @@
 		</form>
         </li>
         <li>
-          <p><div class="logo"><a href="voir_info_ruche.php"><img src="images/information.png">Informations</a></div></p>
+          <p><span class="logo"><a href="voir_info_ruche.php"><img src="images/information.png">Informations</a></span></p>
         </li>
         <li>
-          <p><div class="logo"><a href="visite.php"><img src="images/visite.png">Visites</a></div></p>
-        </li>
-		</li>
+          <p><span class="logo"><a href="visite.php"><img src="images/visite.png">Visites</a></span></p>
+        </li>		
         <li>
-          <p><div class="logo"><a href="recolte.php"><img src="images/pot_miel.png">Récoltes</a></div></p>
-        </li>
-		</li>
+          <p><span class="logo"><a href="recolte.php"><img src="images/pot_miel.png">Récoltes</a></span></p>
+        </li>		
         <li>
-          <p><div class="logo"><a href="stat_ruche.php"><img src="images/stats.png">Stats</a></div></p>
+          <p><span class="logo"><a href="stat_ruche.php"><img src="images/stats.png">Stats</a></span></p>
         </li>
 		<li>
-          <p><div class="logo"><a href="aide.php?Id_Page=3" target="_blank"><img src="images/help.png">Aide</a></div></p>
+          <p><span class="logo"><a href="aide.php?Id_Page=3" target="_blank"><img src="images/help.png">Aide</a></span></p>
         </li>
       </ul>
     </div>

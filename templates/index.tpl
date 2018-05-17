@@ -9,8 +9,8 @@
 	  <ul>
 	  <li><input name="login" type="text" value="login" onclick="vide_champ(this)"><input name="pass" type="password"><a href="#" onclick="submitlogin()">Login</a></li>
       <li><a href="signIn.php">Sign In</a></li>
-	  </form>
 	  </ul>
+	  </form>
 	  <p id="mdp"><a href="mdp_oubli.php">mot de passe oubli&eacute;</a></p>
     </div>
     <div id="presentation"><p>Bienvenue dans {$NomLogiciel}, un logiciel permettant de g&eacute;rer

@@ -45,6 +45,10 @@ echo "</pre>";
 				$IDQ_Base=$row['ID_Question'];
 				$Rep_Base=$row['Re_Question'];
 			}
+			if(!isset($IDQ_Base))
+			{
+				$IDQ_Base="";
+			}
 			if(($IDQ_Base==$LaQuestion) &&($Rep_Base==$LaReponse))
 			{
 				//On récupère l'ID de l'apiculteur

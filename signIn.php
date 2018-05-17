@@ -184,6 +184,7 @@ else
 	  $i++;
   }
   $template->assign('liste_question',$ListeQuestion);
+  $CheminTpl='../templates/';
   $template->display($CheminTpl.'apiculteur.tpl');
 }
   //traitement quoi qu'il en soit

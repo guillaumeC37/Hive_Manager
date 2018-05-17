@@ -37,31 +37,35 @@ if (isset($_POST['token']))
 		$LeTimeOut=$data["Timeout"];
 		$LEtat=$data["Etat_Token"];
 	}
+	
 	//echo "ID :$ID_Api, Etat : $LEtat, Timeout : $LeTimeOut";
 	//Le token est fini, on envoie une fin de non recevoir
 	if ($LEtat==0)
 	{
+		//echo "Etat 0\n";
 		http_response_code(401); //Normalement c'est 401
 		exit;
 	}
 	//Vérification du timeout du token 
 	$Maintenant=new DateTime("now");
-	$DateToken=new DateTime($LeTimeout);
+	$DateToken=new DateTime($LeTimeOut);
 	$Peremption=$Maintenant<$DateToken;
 	if ($Peremption)
 	{
 		$TokenOk=true;
+		//echo "TokenOK à true\n";
 	}
 	else
 	{
-		$SQLS="UPDATE android_table SET Etat_Token=0 WHERE Token=$LeToken";
+		$SQLS="UPDATE android_table SET Etat_Token=0 WHERE Token=$TokenEnCours";
 		$query=$DBConn->prepare($SQLS);
 		$query->execute();
+		//echo "Update Token\n";
 		http_response_code(401); //Normalement c'est 401
 		exit;
 	}
 }
- if($tokenOK)
+ if($TokenOk)
  {	 
 	
 	$SQLS="SELECT COUNT(*) as Nbre FROM maladie WHERE Id_Api=$ID_Api";
@@ -97,7 +101,7 @@ if (isset($_POST['token']))
 		echo $JsonMaladie;*/
 	}
 	  //On parse la page
-  }//Fin de on est dans la session (if true)
+  }//Fin de on est dans la session (if tokenOK)
   else
   {
 	  //On est pas dans la session

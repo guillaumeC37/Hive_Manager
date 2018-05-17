@@ -15,11 +15,11 @@
       <ul>
 	  {foreach from=$liste_ruche item=infos}
         <li>
-          <div class="logo"><a href="#" onclick="ouvre_ruche({$infos.ID_R})"><img src="images/{$infos.Photo}.png">{$infos.Nom_R}</a></div>
+          <span class="logo"><a href="#" onclick="ouvre_ruche({$infos.ID_R})"><img src="images/{$infos.Photo}.png">{$infos.Nom_R}</a></span>
         </li>
 		{/foreach}
         <li>
-          <p><div class="logo"><a href="ajout_ruche.php"><img src="images/ruche_add.png">Ajouter une ruche</a></div></p>
+          <p><span class="logo"><a href="ajout_ruche.php"><img src="images/ruche_add.png">Ajouter une ruche</a></span></p>
         </li>
       </ul>
 	  </form>
@@ -27,13 +27,13 @@
       <p class="item">Divers</p>
       <ul>
         <li>
-          <p><div class="logo"><a href="info_rucher.php"><img src="images/information.png">Informations</a></div></p>
+          <p><span class="logo"><a href="info_rucher.php"><img src="images/information.png">Informations</a></span></p>
         </li>
 		<li>
-          <p><div class="logo"><a href="edit_rucher.php"><img src="images/edit1.png">Editions</a></div></p>
+          <p><span class="logo"><a href="edit_rucher.php"><img src="images/edit1.png">Editions</a></span></p>
         </li>
 		<li>
-          <p><div class="logo"><a href="aide.php?Id_Page=2" target="_blank"><img src="images/help.png">Aide</a></div></p>
+          <p><span class="logo"><a href="aide.php?Id_Page=2" target="_blank"><img src="images/help.png">Aide</a></span></p>
         </li>
       </ul>
     </div>

@@ -1,3 +1,10 @@
+﻿17/05/2018
+voir pour conformité html5 des templates
+Faire fenetre a part dans rucher,qui récupère les infos de toutes les ruches du rucher (position) pour intégrer le plan du rucher vierge (et de fait voir les ruches du rucher)
+dans ruche, faire fenetre a part affichant plan du rucher (avec autres ruches ?). Pouvoir déplacer la ruche via boutons.
+Vérifier la page qui gère la création du graphe hygro, car titre pas bon. Corrigé.
+Souci dans mdp_oubli.php. QUand formulaire validé.(IDQ_BAse indéfinie) : Réglé en modifiant un paramètre.
+
 23/02/2017
 -Modification de index.tpl. ajout d'un texte de présentation au lieu du lorem ipsum dans la zone id presentation
 -Modification de config.inc.php : ajout 
@@ -175,13 +182,23 @@ Passage en 1.0B
 
 19/03/2017 
 Modification de la table rucher. Suppression du unique sur le nom du rucher
+
 27/03/2017
 Ajout d'une table pour la gestion du token android
 Création page login pour android
+
 09/05/2017
 Modification de la page login pour interagir avec le mobile. Fonctionnement OK
 Modification de la page getMaladie. Il faut encore tester le POST avec token.
 Pour cela reprendre la version modifiée de TestMaladie après modification et ajout du POST dans le PHP
+
 11/05/2017 : Vérifier le token à 0 car il indique connecté
 Fonctionnement de récupération et de stockage dans la base des maladies OK en standard, réaliser des crash tests.
 Modification de login.php afin de gérer les token à état 0. OK
+
+13/05/2017
+Modification de getmaladie, ajout de la gestion du timeout
+14/05/2017
+Ajout du scan QR code dans l'appli, choix stand alone
+17/05/2017
+Réduire la taille du QR Code et augmenter la taille du texte

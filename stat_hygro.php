@@ -2,7 +2,7 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * 																	 *
  * Nom de la page :	stat_hygro.php									 *
- * Date création :	03/03/2017										 *
+ * Date création :	18/05/2018										 *
  * Date Modification :	08/003/2017									 *
  * Créateur : Guillaume Crégut										 *													
  * Version :	0.2A												 *
@@ -150,7 +150,7 @@ echo "</pre>";
 						}
 						array_multisort($Date,SORT_ASC,$Hygro,SORT_ASC,$TabTotal);
 						//Génération du graphe
-						$Titre="Relevé des pesées de la ruche '$NomRuche' sur la période du $DateDebutAff au $DateFinAff";
+						$Titre="Relevé hygrométrique de la ruche '$NomRuche' sur la période du $DateDebutAff au $DateFinAff";
 						$Racine=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$Id_Api/temp/";
 						//Si jamais le répertoire n'existe pas (il est normalement créé à l'enregistrement de l'apiculteur sur le système
 						if(!is_dir($Racine))

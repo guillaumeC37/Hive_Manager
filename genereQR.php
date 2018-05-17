@@ -45,6 +45,7 @@
 			//Génération du QRCode
 			$CheminQR=$Racine."$QRCode.png";
 			QRcode::png($QRCode,$CheminQR,"H",10,2);
+			
 		}
 		else
 		{
