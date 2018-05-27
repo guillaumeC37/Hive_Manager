@@ -61,6 +61,7 @@
 				<input type="hidden" name="Y_Ruche" value="{$YRUCHE}" id="Y_Ruche">
 				<input type="hidden" name="Zoom_Ruche" value="{$ZRUCHE}" id="Zoom_Ruche">
 				<input type="hidden" name="Id_Ruche" value="{$ID_RUCHE}" id="Id_Ruche">
+				<input type="hidden" name="Nom_Ruche" value="{$NOMRUCHE}" id="Nom_Ruche">
 				<input type="hidden" name="CheminRucher" id="CheminRucher" value="{$CHEMIN_PHOTO}">
 			</form>
 		</div>

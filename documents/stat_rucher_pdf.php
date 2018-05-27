@@ -88,6 +88,25 @@
 		{
 			  $pdf->SetRecolteType($row['Nom_Type_Miel'],$row['Poids']);
 		}
+		//Mise en place de l'image du rucher 27/05/2018
+		//Récupération des infos de l'image
+		$ID_Api=$_SESSION['ID_API'];
+		$SQLS="SELECT Last_Photo from rucher WHERE id_Rucher=$ID_Rucher";
+		$LastImage='';
+		foreach($DBConn->query($SQLS) as $row)
+		{
+			$LastImage=$row['Last_Photo'];
+		}
+		if($LastImage!='')
+		{
+			//Si le nom est mis, c'est qu'on a créé l'image
+			$pdf->addPage();
+			$CheminComplet=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$ID_Api/temp/carto/".$LastImage;
+			//Charger l'image et l'afficher
+			$titre="Cartographie du rucher";
+			$pdf->Setgraphe($CheminComplet,$titre);
+		}
+		//fin ajout 27/05/2018
 		//Affichage du pdf
 		$pdf->Output();
 	} //
@@ -95,13 +114,6 @@
 	{
 		//No man's land
 	}
-/*
-echo "<pre>";
-print_r($_SESSION);
-echo "<p>POST</p>";
-print_r($_POST);
-echo "</pre>";
-*/
 	  //On parse la page
   }//Fin de on est dans la session
   else

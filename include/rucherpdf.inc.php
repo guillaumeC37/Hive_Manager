@@ -144,4 +144,18 @@ class EditielPDF extends FPDF
 		$this->cell(0,0, "$LeType : $LePoids kg");
 		$this->ln(7);
 	}
+	//Ajout du 27/05/2018
+	function Setgraphe($Image,$titre)
+	{
+		//Affiche le titre
+		$this->ln(15);
+		$this->SetFont('Arial','B',15);
+		$this->Cell(0,0,$titre);
+		$this->ln(20);
+		$Largeur=200;
+		$X_Graph=2;
+		$Y_Graph=$this->getY();
+		//affiche l'image
+		$this->image($Image,$X_Graph);
+	}
 }

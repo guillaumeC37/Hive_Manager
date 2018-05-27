@@ -8,7 +8,7 @@ window.onload=function()
 	
 	//
 	var xhr=getXMLHttpRequest();
-	xhr.open("GET","return_ruches.php",false);
+	xhr.open("GET","ajax/return_ruches.php",false);
 	xhr.send(null);
 	if(xhr.readyState != 4 || (xhr.status != 200 && xhr.status != 0)) // Code == 0 en local
 		throw new Error("Impossible de charger la carte nommée carte (code HTTP : " + xhr.status + ").");
@@ -21,7 +21,7 @@ window.onload=function()
 	var TabLength=ruches.length;
 	for(i=0;i<TabLength;i++)
 	{
-		var TempRuche=new Ruche("ruche.png",ruches[i].X_Ruche,ruches[i].Y_Ruche,ruches[i].Z_Ruche);
+		var TempRuche=new Ruche("ruche.png",ruches[i].X_Ruche,ruches[i].Y_Ruche,ruches[i].Z_Ruche,ruches[i].LeNom);
 		Mon_Rucher.addRuche(TempRuche);
 	}
 	//

@@ -6,6 +6,9 @@
 	Cartographie fonctionnelle.
 	Mise à jour de l'aide.
 	Changement de version en 1.1C.
+	Transmis à Git.
+	Modification de save_carto.php, ajout d'une procedure et d'un champ dans la table rucher.
+	
 26/05/2018
 	Ajout dans  la base d'une colonne image pour le rucher.
 	Ajout de 3 colonnes dans la table ruche, X_Ruche, Y_Ruche, Zoom_Ruche.

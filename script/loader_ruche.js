@@ -10,8 +10,9 @@ window.onload=function()
 	var Y_LaRuche=document.getElementById('Y_Ruche').value;
 	var Z_LaRuche=document.getElementById('Zoom_Ruche').value;
 	var ImageRucher=document.getElementById('CheminRucher').value;
+	var NomRuche=document.getElementById('Nom_Ruche').value;
 	Mon_Rucher=new Rucher(ImageRucher);
-	MaRuche=new Ruche("ruche_carto.png",X_LaRuche,Y_LaRuche,Z_LaRuche);
+	MaRuche=new Ruche("ruche_carto.png",X_LaRuche,Y_LaRuche,Z_LaRuche,NomRuche);
 	Mon_Rucher.addRuche(MaRuche);
 	//
 	Mon_Rucher.dessinerRucher(ctx);	

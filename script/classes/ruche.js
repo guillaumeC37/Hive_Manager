@@ -5,12 +5,13 @@ var DIRECTION=
 	"DROITE"	: 2,
 	"HAUT"		: 3
 }
-function Ruche(url,x,y,z)
+function Ruche(url,x,y,z,nomR)
 {
 		this.x=parseInt(x);
 		this.y=parseInt(y);
 		this.Largeur=120;
 		this.hauteur=105;
+		this.nomR=nomR;
 		if (typeof(z)=='undefined')
 		{
 			this.zoom=0;
@@ -53,6 +54,18 @@ Ruche.prototype.dessinerRuche =function(context)
 {
 	//alert(this.Largeur+"x"+this.hauteur);
 	context.drawImage(this.image,this.x,this.y,this.Largeur,this.hauteur);
+	//Dessine le label
+	labelLargeur=50;
+	xlabel=this.x+(this.Largeur-labelLargeur)/2;
+	ylabel=this.y+this.hauteur+5;
+	context.beginPath();
+	context.rect(xlabel,ylabel,labelLargeur,20);
+	context.fillStyle='red';
+	context.fill();
+	context.lineWidth=1;
+	context.stroke();
+	context.fillStyle='white';
+	context.fillText(this.nomR,(xlabel+5),(ylabel+12));
 }
 Ruche.prototype.ZoomIn=function(context,step)
 {

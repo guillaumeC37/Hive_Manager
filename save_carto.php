@@ -34,6 +34,7 @@
 		{
 			$CheminImage="documents/$ID_Api/temp/carto/";
 			$Suffixe='-'.date('Y-m-d');
+			$Nom_Image=$Id_Rucher.$Suffixe.'.png';
 			$NomFichier=$CheminImage.$Id_Rucher.$Suffixe.'.png';
 			if (isset($_POST['Image_Ruche']))
 			{
@@ -46,6 +47,23 @@
 			if($OK)
 			{
 				$template->assign('Nom_Fichier',$NomFichier);
+				//On enregistre le chemin du fichier dans la base pour affichage ultérieur
+				$DBConn=connectbase($userdb,$passdb,$servdb,$nomdb);
+				$TableValeur=array(':IDRUCHER'=>$Id_Rucher,':Nom_Image'=>$Nom_Image);
+				//On prépare la requete
+				$SQLS="CALL P_Update_LastImage_Rucher(:Nom_Image,:IDRUCHER)";
+				$query=$DBConn->prepare($SQLS);
+				//Execute la requete
+				$query->execute($TableValeur); 
+				$count=$query->rowCount();
+				if($count==1)
+				{
+					 $template->assign('Resultat','Modification effectu&eacute;e');//OK //inutile
+				}
+				else
+				{
+					   $template->assign('Erreur','Erreur lors de la modification');//pas OK
+				}
 			}
 			else
 			{
