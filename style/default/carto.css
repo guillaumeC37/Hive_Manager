@@ -1,0 +1,84 @@
+canvas
+{
+	border : 1px solid black;
+}
+strong
+{
+	color : red;
+}
+#LaSection
+{
+	display : flex;
+	align-items : center;
+}
+#Larticle
+{
+	align-items : baseline;
+	
+}
+#Laside
+{
+	margin-left : 200px;
+	align-items : baseline;
+}
+#LienCarto {
+	text-decoration : none;
+	background : #e8e8b9;
+	padding : 15px;
+	border-radius : 5px;
+	margin-left : 25px;
+	color : black;
+}
+/*Pour la vue ruche */
+table
+{
+	margin :0;
+	padding : 0;
+}
+tr
+{
+	margin :0;
+	padding : 0;
+}
+.LigneTop
+{
+	vertical-align : bottom;
+}
+.LigneBottom
+{
+	vertical-align : top;
+}
+td
+{
+	text-align : center;
+	margin : 0;
+	padding : 0;
+}
+.Btn_Nav
+{
+	/*margin-left : auto;
+	margin-right :auto;
+	margin-bottom :0;
+	margin-top :0;*/
+	padding : 5px;
+}
+#cartoruche
+{
+	display :flex;
+	align-items : center;
+}
+#LeTableau
+{
+	/*padding-left : 50px;*/
+	flex : 1;
+}
+#leCanvas
+{
+	flex : 2;
+	width :70%;
+	text-align : center;
+}
+#Btn_Save
+{
+	margin : auto;
+}
