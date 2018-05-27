@@ -33,6 +33,8 @@
           <p><span class="logo"><a href="edit_rucher.php"><img src="images/edit1.png">Editions</a></span></p>
         </li>
 		<li>
+		 <p><span class="logo"><a href="carto_rucher.php"><img src="images/carto.png">Cartographie</a></span></p>
+		<li>
           <p><span class="logo"><a href="aide.php?Id_Page=2" target="_blank"><img src="images/help.png">Aide</a></span></p>
         </li>
       </ul>

@@ -4,6 +4,7 @@
   </head>
 <body>
     <h1 id="titre">Fiche aide : rucher</h1>
+	<p><img src="aide/images/fiche_rucher.png" alt="ecran rucher"></p>
  <div class="paraf">
 	<p>Dans cette page, vous trouverez tout ce qui concerne la gestion du
       rucher.</p>
@@ -45,5 +46,16 @@
     indiqu&eacute; sur le page.</p>
 	<h3>Statistiques du rucher</h3>
 	<p>Affiche les statistiques du rucher</p>
+</div>
+<h2>Cartographie</h2>
+<div class="paraf">	  
+	<p class="imgpage"><img alt="page editions" src="aide/images/carto_rucher.png"></p>
+	<p>La cartographie permet de localiser sur un plan ou une photo (satellite) de rep&eacute;rer les ruches du rucher.</p>
+	<h3>Fichier image de la cartographie</h3>
+	<p>Vous pouvez selectionner une photo et lui donner un nom.<br>
+	Cette photo sera stock&eacute;e sur le syst&egrave;me et permettra l'affichage des position des ruches sur le rucher</p>
+	<h3>Affichage de la cartographie</h3>
+	<p class="imgpage"><img alt="page editions" src="aide/images/save_carto_rucher.png"></p>
+	<p>Cette page permet l'affichage et la sauvegarde de la cartographie du rucher.</p>
 </div>
 	<p><a href="aide.php" id="LienRetour">Retour &agrave; l'aide</a></p>

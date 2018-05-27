@@ -22,7 +22,7 @@
   $RucheMorte=1;
   $RucheStockee=2;
   $SelHash='Happy';
-  $Version_Soft='1.0Beta';
-  $VersionCourte='1.0B';
+  $Version_Soft='1.1C';
+  $VersionCourte='1.1C';
   $NomProduit='Gestion Rucher';
 ?>

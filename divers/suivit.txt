@@ -1,204 +1,220 @@
-﻿17/05/2018
-voir pour conformité html5 des templates
-Faire fenetre a part dans rucher,qui récupère les infos de toutes les ruches du rucher (position) pour intégrer le plan du rucher vierge (et de fait voir les ruches du rucher)
-dans ruche, faire fenetre a part affichant plan du rucher (avec autres ruches ?). Pouvoir déplacer la ruche via boutons.
-Vérifier la page qui gère la création du graphe hygro, car titre pas bon. Corrigé.
-Souci dans mdp_oubli.php. QUand formulaire validé.(IDQ_BAse indéfinie) : Réglé en modifiant un paramètre.
+﻿27/05/2018
+	Sauvegarde de la cartographie du rucher OK. Reste à faire positionnement de la ruche dans le rucher, et le sript récupérant les infos.
+	Faire les aides !
+	Création vue coordonnées, page carto pour la ruche. Fonctionnelle sauf sauvegarde.
+	Création procédure pour modifier les coordonnées dans la base. OK. Sauvegarde OK.
+	Cartographie fonctionnelle.
+	Mise à jour de l'aide.
+	Changement de version en 1.1C.
+26/05/2018
+	Ajout dans  la base d'une colonne image pour le rucher.
+	Ajout de 3 colonnes dans la table ruche, X_Ruche, Y_Ruche, Zoom_Ruche.
+	Sauvegarde de la base.
+	Ajout icone carto dans rucher.
+	Modification de signin.php pour création répertoire carto.
+	Ajout d'un fond carto OK.
+17/05/2018
+	voir pour conformité html5 des templates OK
+	Faire fenetre a part dans rucher,qui récupère les infos de toutes les ruches du rucher (position) pour intégrer le plan du rucher vierge (et de fait voir les ruches du rucher)
+	dans ruche, faire fenetre a part affichant plan du rucher (avec autres ruches ?). Pouvoir déplacer la ruche via boutons.
+	Vérifier la page qui gère la création du graphe hygro, car titre pas bon. Corrigé.
+	Souci dans mdp_oubli.php. Quand formulaire validé.(IDQ_Base indéfinie) : Réglé en modifiant un paramètre.
 
 23/02/2017
--Modification de index.tpl. ajout d'un texte de présentation au lieu du lorem ipsum dans la zone id presentation
--Modification de config.inc.php : ajout 
-	$NomProduit='Gestion Rucher';
--Modification index.php : ajout
-	$template->assign('NomLogiciel',$NomProduit);
-dans la zone hors session
--Création d'un dossier aide
--Création d'un HTML aide sur accueil : il faut redimensionner les icones du dossier image dans aide.
--Attention : dans la page modification de l'apiculteur, il manque un s a vous !!
--Creation en v0.1 de la page aide.php
--Creation en V.01 de la page aide accueil.tpl et index.tpl
--Modification de accueil.tpl, ajout du lien d'aide.
--Création partielle en V0.1 de la page aide rucher
--Création des fiches css attenantes.
--Passage en V0.2 des aides.
--Modification accueil.tpl : ajout lien et icone vers statistiques
--Modification stat_apiculteur, tpl et ajax en fonction.
-	Reste à faire le CSS pour mettre en forme.
--modification de la base de données : ajout d'une vue supplémentaire
+	-Modification de index.tpl. ajout d'un texte de présentation au lieu du lorem ipsum dans la zone id presentation
+	-Modification de config.inc.php : ajout 
+		$NomProduit='Gestion Rucher';
+	-Modification index.php : ajout
+		$template->assign('NomLogiciel',$NomProduit);
+	dans la zone hors session
+	-Création d'un dossier aide
+	-Création d'un HTML aide sur accueil : il faut redimensionner les icones du dossier image dans aide.
+	-Attention : dans la page modification de l'apiculteur, il manque un s a vous !!
+	-Creation en v0.1 de la page aide.php
+	-Creation en V.01 de la page aide accueil.tpl et index.tpl
+	-Modification de accueil.tpl, ajout du lien d'aide.
+	-Création partielle en V0.1 de la page aide rucher
+	-Création des fiches css attenantes.
+	-Passage en V0.2 des aides.
+	-Modification accueil.tpl : ajout lien et icone vers statistiques
+	-Modification stat_apiculteur, tpl et ajax en fonction.
+		Reste à faire le CSS pour mettre en forme.
+	-modification de la base de données : ajout d'une vue supplémentaire
 
 24/02/2017
--Modification stat_api.tpl : ajout lien css
--Creation css pour stat_api
--Finalisation de la page statistique Apiculteur
--Modification de la page aide accueil
--Modification de la page index de l'aide
--Modification de la page aide rucher
+	-Modification stat_api.tpl : ajout lien css
+	-Creation css pour stat_api
+	-Finalisation de la page statistique Apiculteur
+	-Modification de la page aide accueil
+	-Modification de la page index de l'aide
+	-Modification de la page aide rucher
 
 25/02/2017
-Création page aide ruche.
-Modification page aide.php
-Modification page index aide.
-Modification vue vue_ruche_etat_essaim, ajout nbre de hausses
-Modification de ajax_ruche_etat.php, ajax.js afin d'intégrer le nombre de hausse de la ruche.
-Modification table ruche, ajout qrCode.
-Modification de la procédure stockée ajout ruche
-Modification ajout_ruche.php pour prendre en compte le QRCode
-Modification de voir_info_ruche.tpl : ajout lien vers le QRCode
-Création d'une page générant le QR Code et le reste de l'étiquette.
-Modification d'index.php, ajout d'une fonction de nettoyage à la connexion d'un apiculteur.
-Modification du fichier aide ruche en fonction du QR Code.
-Modification edit_rucher.tpl, ajout lien vers statistiques
-Création des fichiers nécessaires pour les stats du rucher
+	Création page aide ruche.
+	Modification page aide.php
+	Modification page index aide.
+	Modification vue vue_ruche_etat_essaim, ajout nbre de hausses
+	Modification de ajax_ruche_etat.php, ajax.js afin d'intégrer le nombre de hausse de la ruche.
+	Modification table ruche, ajout qrCode.
+	Modification de la procédure stockée ajout ruche
+	Modification ajout_ruche.php pour prendre en compte le QRCode
+	Modification de voir_info_ruche.tpl : ajout lien vers le QRCode
+	Création d'une page générant le QR Code et le reste de l'étiquette.
+	Modification d'index.php, ajout d'une fonction de nettoyage à la connexion d'un apiculteur.
+	Modification du fichier aide ruche en fonction du QR Code.
+	Modification edit_rucher.tpl, ajout lien vers statistiques
+	Création des fichiers nécessaires pour les stats du rucher
 
 26/02/2017
-Modification des pages rucherpdf.inc.php et stat_rucher_pdf.php pour générer le pdf.
-Création CSS pour les stats du rucher
-Modification aide rucher : ajout de la photo ecran edition
-->Fonctions rucher OK.
+	Modification des pages rucherpdf.inc.php et stat_rucher_pdf.php pour générer le pdf.
+	Création CSS pour les stats du rucher
+	Modification aide rucher : ajout de la photo ecran edition
+	->Fonctions rucher OK.
 
 27/02/2017
-->Ajoute rucher : pas de controle supplémentaire à faire.
-Modification modif_ruche.js, addruche.js : ajout controle date
-Modification ajout_ruche.php : ajout controle integer des entrées.
-Modification modif_ruche.php : controle des entiers.
-->Ajout et modification de ruche OK.
-Modification rucher.css : ajout du style pour le bouton retour en arrière.
--Idem add_rucher.tpl
--Api.css,info_api.tpl, parametre.tpl,stat_api, aide/accueil.tpl
-->Style pour apicluteur OK.
-Correction d'un bug dans index.php
-Modification de toutes les pages tpl pour bouton retour.
-Style validé pour toutes les pages crées
-Reprise de toutes les pages pour corriger la page d'erreur no man's land.
-Sauvegarde des données.
-Ajout du favicon et modification des fichiers entete.html
+	->Ajoute rucher : pas de controle supplémentaire à faire.
+	Modification modif_ruche.js, addruche.js : ajout controle date
+	Modification ajout_ruche.php : ajout controle integer des entrées.
+	Modification modif_ruche.php : controle des entiers.
+	->Ajout et modification de ruche OK.
+	Modification rucher.css : ajout du style pour le bouton retour en arrière.
+	-Idem add_rucher.tpl
+	-Api.css,info_api.tpl, parametre.tpl,stat_api, aide/accueil.tpl
+	->Style pour apicluteur OK.
+	Correction d'un bug dans index.php
+	Modification de toutes les pages tpl pour bouton retour.
+	Style validé pour toutes les pages crées
+	Reprise de toutes les pages pour corriger la page d'erreur no man's land.
+	Sauvegarde des données.
+	Ajout du favicon et modification des fichiers entete.html
 
 02/03/2017
-Passage en dernière version de smarty. Ancienne version concervée dans divers.
-Modification de la base de données : modif de la procédure stockée add_rucher.
-Ajout des entetes php sur les pages php à la racine
-Ajout des entetes à toutes les pages php
-Création table template
-Creation template apparence
-Modification parametres.tpl : ajout lien apparence
-Création pages (tpl+php+css+js) pour apparence.
-Sauvegarde base
-Sauvegarde fichiers
-Création pages bilan ruche (php, tpl)
-Création de la page de génération du pdf dans documents
-Création include/bilan_pdf.inc.php
+	Passage en dernière version de smarty. Ancienne version concervée dans divers.
+	Modification de la base de données : modif de la procédure stockée add_rucher.
+	Ajout des entetes php sur les pages php à la racine
+	Ajout des entetes à toutes les pages php
+	Création table template
+	Creation template apparence
+	Modification parametres.tpl : ajout lien apparence
+	Création pages (tpl+php+css+js) pour apparence.
+	Sauvegarde base
+	Sauvegarde fichiers
+	Création pages bilan ruche (php, tpl)
+	Création de la page de génération du pdf dans documents
+	Création include/bilan_pdf.inc.php
 
 03/03/2017
-Modification signIn.php : ajout création répertoire utilmisateur à la validation de la création de l'apiculteur
-Création de la page stat_temp.php pour les stats de températures. Création du tpl pour rechercher les dates.
-Modification des pages php de racine afin de créer une variable représentant le chemin des tpl.
-Finition stat températures.
-Ajout dans stat_ruche.tpl d'une ligne stat datalogger
-Suppression d'une ligne dans la même page car en doublon avec bilan.
-Création ensemble de page pour les stats poids.
-Création ensemble de page pour les stats hygro.
-Sauvegarde des fichiers
+	Modification signIn.php : ajout création répertoire utilmisateur à la validation de la création de l'apiculteur
+	Création de la page stat_temp.php pour les stats de températures. Création du tpl pour rechercher les dates.
+	Modification des pages php de racine afin de créer une variable représentant le chemin des tpl.
+	Finition stat températures.
+	Ajout dans stat_ruche.tpl d'une ligne stat datalogger
+	Suppression d'une ligne dans la même page car en doublon avec bilan.
+	Création ensemble de page pour les stats poids.
+	Création ensemble de page pour les stats hygro.
+	Sauvegarde des fichiers
 
 04/03/2017
-Modification edit_bilanpdf.php
-Modification bilanpdf.inc.php
-Création drawrecolteBilan.php
-Bilan ruche OK, sauf pour datalogger (encore en commentaires, il faut finir la partie datalogger)
-création achat.tpl et achat.php
-Création procédure P_Add_Achat dans la table
-Ajout achat OK, reste à faire la présentation
-Sauvergarde
+	Modification edit_bilanpdf.php
+	Modification bilanpdf.inc.php
+	Création drawrecolteBilan.php
+	Bilan ruche OK, sauf pour datalogger (encore en commentaires, il faut finir la partie datalogger)
+	création achat.tpl et achat.php
+	Création procédure P_Add_Achat dans la table
+	Ajout achat OK, reste à faire la présentation
+	Sauvergarde
 
 05/03/2017
-Modification achat.tpl, création achat.css
-Modification achat.php, création achat.js
-Mise à jour de l'aide
-Suppression des tables evenement et historique, qui finalement ne seront pas utilisées.
-Modification de la vue ruche_api, ajout id ruche dans la vue.
-Modification datalogger.php
-Modification des en tetes pour mise aux normes html 4
-Sauvegarde des données
+	Modification achat.tpl, création achat.css
+	Modification achat.php, création achat.js
+	Mise à jour de l'aide
+	Suppression des tables evenement et historique, qui finalement ne seront pas utilisées.
+	Modification de la vue ruche_api, ajout id ruche dans la vue.
+	Modification datalogger.php
+	Modification des en tetes pour mise aux normes html 4
+	Sauvegarde des données
 
 06/03/2017
-Modification datalogger.tpl, datalogger.js, datalogger.php
-Création datalogger.css
-Reste à mettre en forme le tpl et effectuer la création du fichier pour le datalogger, et faire la page qui va bien après traitement.
-Création loaddatalogger.php et tpl. Aucun lien, pour le moment pour mener à cette page.
-Modification table datalogger, mise à null des champs mesures, avec valeurs -100 ou 0 en fonction. ajout champ ID_Apiculteur
-Création d'une procédure stockée.
-Fonctionnement OK
-Reste à faire les pages de présentations.
-Sauvegarde
+	Modification datalogger.tpl, datalogger.js, datalogger.php
+	Création datalogger.css
+	Reste à mettre en forme le tpl et effectuer la création du fichier pour le datalogger, et faire la page qui va bien après traitement.
+	Création loaddatalogger.php et tpl. Aucun lien, pour le moment pour mener à cette page.
+	Modification table datalogger, mise à null des champs mesures, avec valeurs -100 ou 0 en fonction. ajout champ ID_Apiculteur
+	Création d'une procédure stockée.
+	Fonctionnement OK
+	Reste à faire les pages de présentations.
+	Sauvegarde
 
 07/03/2017
-Création fichier drawdatalog.php pour la génération des graphes stats du datalogger
-Création stat_data.css a completer
-création stat_datalogger.php 
-Modification de stat_ruche.tpl, ajout du lien vers le datalogger
-Modification de edit_bilanpdf, et draw_RecolteBilan.php
+	Création fichier drawdatalog.php pour la génération des graphes stats du datalogger
+	Création stat_data.css a completer
+	création stat_datalogger.php 
+	Modification de stat_ruche.tpl, ajout du lien vers le datalogger
+	Modification de edit_bilanpdf, et draw_RecolteBilan.php
 
 08/03/2017
-Modification des créations de graphes poids, temp et hygro : prise en comptes des valeurs datalogger.
-Modification datalogger.tpl : ajout lien vers loaddatalogger
-Modification datalogger.css
-Modification statdatalogger.php
-Modification edit_bilanpdf.php
-//Mise en place de controles poussés des infos formulaires
-Modification essaim.js
-Modification creer_essaim.php
-Modification affecte_essaim.php
-visite.js
-visite.php
-update_api.php
-SignIn.php
-A vérifier.
-Modification stat_datalogger.tpl et css
+	Modification des créations de graphes poids, temp et hygro : prise en comptes des valeurs datalogger.
+	Modification datalogger.tpl : ajout lien vers loaddatalogger
+	Modification datalogger.css
+	Modification statdatalogger.php
+	Modification edit_bilanpdf.php
+	//Mise en place de controles poussés des infos formulaires
+	Modification essaim.js
+	Modification creer_essaim.php
+	Modification affecte_essaim.php
+	visite.js
+	visite.php
+	update_api.php
+	SignIn.php
+	A vérifier.
+	Modification stat_datalogger.tpl et css
 
 10/03/2017
-Modification stat_datalogger.tpl
-Modification stat_datalogger.php
-Modification bilan_pdf.inc.php
-Modification edit_bilanpdf.php
-Modification index.php
-Création datalogger_ok.tpl, et erreur_datalogger.tpl
-Modification datalogger.php
-Modification aide/accueil.tpl
-Modification config.inc.php
-Modification aide/index.tpl
-Modification aide/ruche.tpl
-Sauvegarde
+	Modification stat_datalogger.tpl
+	Modification stat_datalogger.php
+	Modification bilan_pdf.inc.php
+	Modification edit_bilanpdf.php
+	Modification index.php
+	Création datalogger_ok.tpl, et erreur_datalogger.tpl
+	Modification datalogger.php
+	Modification aide/accueil.tpl
+	Modification config.inc.php
+	Modification aide/index.tpl
+	Modification aide/ruche.tpl
+	Sauvegarde
 
 11/03/2017
-Modification ajout_ruche.php
-Modification ajoutrucher.php
-Modification loaddatalogger.php
-Modification signIn.php
-Modification update_api.php
-Modification stat_rucher.tpl
-Modification config.inc.php
-Modification de la base de données
-Ajout images dans style/images
-Passage en 1.0B
+	Modification ajout_ruche.php
+	Modification ajoutrucher.php
+	Modification loaddatalogger.php
+	Modification signIn.php
+	Modification update_api.php
+	Modification stat_rucher.tpl
+	Modification config.inc.php
+	Modification de la base de données
+	Ajout images dans style/images
+	Passage en 1.0B
 
 19/03/2017 
-Modification de la table rucher. Suppression du unique sur le nom du rucher
+	Modification de la table rucher. Suppression du unique sur le nom du rucher
 
 27/03/2017
-Ajout d'une table pour la gestion du token android
-Création page login pour android
+	Ajout d'une table pour la gestion du token android
+	Création page login pour android
 
 09/05/2017
-Modification de la page login pour interagir avec le mobile. Fonctionnement OK
-Modification de la page getMaladie. Il faut encore tester le POST avec token.
-Pour cela reprendre la version modifiée de TestMaladie après modification et ajout du POST dans le PHP
+	Modification de la page login pour interagir avec le mobile. Fonctionnement OK
+	Modification de la page getMaladie. Il faut encore tester le POST avec token.
+	Pour cela reprendre la version modifiée de TestMaladie après modification et ajout du POST dans le PHP
 
-11/05/2017 : Vérifier le token à 0 car il indique connecté
-Fonctionnement de récupération et de stockage dans la base des maladies OK en standard, réaliser des crash tests.
-Modification de login.php afin de gérer les token à état 0. OK
+11/05/2017
+	Vérifier le token à 0 car il indique connecté
+	Fonctionnement de récupération et de stockage dans la base des maladies OK en standard, réaliser des crash tests.
+	Modification de login.php afin de gérer les token à état 0. OK
 
 13/05/2017
-Modification de getmaladie, ajout de la gestion du timeout
+	Modification de getmaladie, ajout de la gestion du timeout
 14/05/2017
-Ajout du scan QR code dans l'appli, choix stand alone
+	Ajout du scan QR code dans l'appli, choix stand alone
 17/05/2017
-Réduire la taille du QR Code et augmenter la taille du texte
+	Réduire la taille du QR Code et augmenter la taille du texte

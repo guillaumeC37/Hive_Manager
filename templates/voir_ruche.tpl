@@ -33,6 +33,9 @@
           <p><span class="logo"><a href="stat_ruche.php"><img src="images/stats.png">Stats</a></span></p>
         </li>
 		<li>
+          <p><span class="logo"><a href="carto_ruche.php"><img src="images/carto.png">Cartographie</a></span></p>
+        </li>
+		<li>
           <p><span class="logo"><a href="aide.php?Id_Page=3" target="_blank"><img src="images/help.png">Aide</a></span></p>
         </li>
       </ul>

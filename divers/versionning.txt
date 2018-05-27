@@ -1,6 +1,9 @@
 Version 0.1A :
-Création du système
+	Création du système
 Version 0.2A :
-Ajout personnalisation de l'affichage via css
-transformation de la version 0.2A en 1.0B
-Version 1.1B : gestion d'android. Compatible avec la 1.0B.
+	Ajout personnalisation de l'affichage via css
+	transformation de la version 0.2A en 1.0B
+Version 1.1B :
+	gestion d'android. Compatible avec la 1.0B.
+Version 1.1C :
+	Gestion de la cartographie. Incompatible avec la version 1.1B, car ajout de fonctions dans la base de données.

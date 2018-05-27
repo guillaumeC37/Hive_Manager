@@ -3,7 +3,7 @@
  * 																	 *
  * Nom de la page :	signIn.php										 *
  * Date création :													 *
- * Date Modification :	10/03/2017									 *
+ * Date Modification :	26/05/2018									 *
  * Créateur : Guillaume Crégut										 *
  * Version :	0.2A												 *
  * Objet et notes :													 *
@@ -144,6 +144,9 @@ if (isset($_POST['newApi']))
 		//On créé le repertoire temporaire
 		$Racine=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$Id_Api/temp/";
 		mkdir($Racine);
+		//On créé le répertoire pour les cartos
+		$CheminCarto=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$ID_Api/carto/";
+		mkdir($CheminCarto);
 		$Page=$CheminTpl.'api_ajout.tpl';
     } 
 	else

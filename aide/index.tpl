@@ -39,6 +39,11 @@
 						<li>D&eacute;claration de rucher</li>
 						<li>Statistiques du rucher</li>
 					</ol>
+					<li>Cartographie</li>
+					<ol>
+						<li>Fichier Image de la cartographie</li>
+						<li>Affichage de la cartographie</li>
+					</ol>
 				</ol>
 		</li>
 	</div>
@@ -62,6 +67,7 @@
 					<li>Bilan de la ruche</li>
 				</ol>
 			</li>
+			<li>Cartographie</li>
 		</ol>
 	</li>
 	</div>
