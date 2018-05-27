@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 27 Mai 2018 à 17:48
+-- Généré le :  Dim 27 Mai 2018 à 21:40
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -123,6 +123,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `P_Update_Image_Rucher`(IN `Nom_Imag
     MODIFIES SQL DATA
 UPDATE rucher SET Path_Image=Nom_Image
 WHERE id_Rucher=IDRUCHER$$
+
+DROP PROCEDURE IF EXISTS `P_Update_LastImage_Rucher`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `P_Update_LastImage_Rucher`(IN `Nom_Image` VARCHAR(100), IN `IDRUCHER` INT(11))
+    MODIFIES SQL DATA
+UPDATE rucher SET Last_Photo=Nom_Image WHERE id_Rucher=IDRUCHER$$
 
 DROP PROCEDURE IF EXISTS `P_Update_Ruche`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `P_Update_Ruche`(IN `NomRuche` VARCHAR(60), IN `NumRuche` VARCHAR(30), IN `Rucher` INT(11), IN `DateC` DATE, IN `Etat` INT(11), IN `Hausses` INT(11), IN `Obs` LONGTEXT, IN `IdRuche` INT(11))
@@ -376,6 +381,7 @@ CREATE TABLE IF NOT EXISTS `rucher` (
   `isActif` smallint(6) NOT NULL,
   `ID_Apiculteur` int(10) unsigned NOT NULL,
   `Path_Image` varchar(130) DEFAULT NULL,
+  `Last_Photo` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_Rucher`,`ID_Apiculteur`),
   KEY `fk_rucher_apiculteur1_idx` (`ID_Apiculteur`),
   KEY `Nom_Rucher_UNIQUE` (`Nom_Rucher`)
@@ -542,7 +548,8 @@ CREATE TABLE IF NOT EXISTS `vue_coord_ruche_rucher` (
 `X_Ruche` int(11)
 ,`Y_Ruche` int(11)
 ,`Z_Ruche` int(11)
-,`id_rucher` int(11)
+,`id_Rucher` int(11)
+,`Nom_Ruche` varchar(60)
 );
 -- --------------------------------------------------------
 
@@ -741,7 +748,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `vue_coord_ruche_rucher`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vue_coord_ruche_rucher` AS select `ruche`.`X_Ruche` AS `X_Ruche`,`ruche`.`Y_Ruche` AS `Y_Ruche`,`ruche`.`Z_Ruche` AS `Z_Ruche`,`ruche`.`id_Rucher` AS `id_rucher` from `ruche` where ((`ruche`.`X_Ruche` is not null) and (`ruche`.`Y_Ruche` is not null) and (`ruche`.`Z_Ruche` is not null));
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vue_coord_ruche_rucher` AS select `ruche`.`X_Ruche` AS `X_Ruche`,`ruche`.`Y_Ruche` AS `Y_Ruche`,`ruche`.`Z_Ruche` AS `Z_Ruche`,`ruche`.`id_Rucher` AS `id_Rucher`,`ruche`.`Nom_Ruche` AS `Nom_Ruche` from `ruche` where ((`ruche`.`X_Ruche` is not null) and (`ruche`.`Y_Ruche` is not null) and (`ruche`.`Z_Ruche` is not null));
 
 -- --------------------------------------------------------
 
