@@ -1,35 +1,51 @@
 <?php
 
 /**
-* Rose Theme class
+* Aqua Theme class
 */
-class RoseTheme extends Theme 
+class AquaTheme extends Theme 
 {
-    private $font_color       = '#CC0044';
-    private $background_color = '#FFDDDD';
-    private $axis_color       = '#CC0000';
-    private $grid_color       = '#CC3333';
+    protected $font_color       = '#0044CC';
+    protected $background_color = '#DDFFFF';
+    protected $axis_color       = '#0066CC';
+    protected $grid_color       = '#3366CC';
 
     function GetColorList() {
         return array(
-            '#FF0000',
-            '#FF99FF',
-            '#AA0099',
-            '#FF00FF',
-            '#FF6666',
-            '#FF0099',
-            '#FFBB88',
-            '#AA2211',
-            '#FF6699',
-            '#BBAA88',
-            '#FF2200',
-            '#883333',
-            '#EE7777',
-            '#EE7711',
-            '#FF0066',
-            '#DD7711',
-            '#AA6600',
-            '#EE5500',
+            '#183152',
+            '#C4D7ED',
+            '#375D81',
+            '#ABC8E2',
+            '#E1E6FA',
+            '#9BBAB2',
+            '#3B4259',
+            '#0063BC',
+            '#1D5A73',
+            '#ABABFF',
+            '#27ADC5',
+            '#EDFFCC',
+
+/*
+
+            '#66FFFF',
+            '#00AABB',
+            '#00FFCC',
+            '#33CCFF',
+            '#008866',
+            '#99FFFF',
+            '#0099FF',
+            '#99FFCC',
+            '#3399FF',
+            '#2277FF',
+            '#445588',
+            '#003388',
+            '#338877',
+            '#55DDFF',
+            '#00FF99',
+            '#BBBBBB',
+            '#77AAFF',
+            '#00FFCC',
+*/
         );
     }
 
@@ -90,12 +106,12 @@ class RoseTheme extends Theme
 
         // legend
         $graph->legend->SetFillColor('white');
-        /*
+
         $graph->legend->SetFrameWeight(0);
-        $graph->legend->Pos(0.5, 0.85, 'center', 'top');
+        $graph->legend->Pos(0.5, 0.80, 'center', 'top');
         $graph->legend->SetLayout(LEGEND_HOR);
-        $graph->legend->SetColumns(3);
-        */
+        $graph->legend->SetColumns(4);
+
         $graph->legend->SetShadow(false);
         $graph->legend->SetMarkAbsSize(5);
 
@@ -111,11 +127,12 @@ class RoseTheme extends Theme
     function PreStrokeApply($graph) {
         if ($graph->legend->HasItems()) {
             $img = $graph->img;
+            $height = $img->height;
             $graph->SetMargin(
                 $img->raw_left_margin, 
                 $img->raw_right_margin, 
                 $img->raw_top_margin, 
-                is_numeric($img->raw_bottom_margin) ? $img->raw_bottom_margin : $img->height * 0.25
+                $height * 0.25
             );
         }
     }
@@ -147,21 +164,22 @@ class RoseTheme extends Theme
                 $color = $this->GetNextColor();
                 $plot->SetColor($color);
                 $plot->SetFillColor($color);
-                $plot->SetShadow('red', 3, 4, false);
+                //$plot->SetShadow();
                 break;
             }
 
             case 'LinePlot':
             {
                 $plot->Clear();
-
-                $plot->SetColor($this->GetNextColor().'@0.4');
+                $plot->SetColor($this->GetNextColor());
                 $plot->SetWeight(2);
+//                $plot->SetBarCenter();
                 break;
             }
 
             case 'PiePlot':
             {
+                $plot->SetCenter(0.5, 0.45);
                 $plot->ShowBorder(false);
                 $plot->SetSliceColors($this->GetThemeColors());
                 break;

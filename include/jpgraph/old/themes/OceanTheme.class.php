@@ -1,35 +1,35 @@
 <?php
 
 /**
-* Rose Theme class
+* Ocean Theme class
 */
-class RoseTheme extends Theme 
+class OceanTheme extends Theme 
 {
-    private $font_color       = '#CC0044';
-    private $background_color = '#FFDDDD';
-    private $axis_color       = '#CC0000';
-    private $grid_color       = '#CC3333';
+    protected $font_color       = '#0066FF';
+    private $background_color = '#DDEEFF';
+    private $axis_color       = '#0000CC';
+    private $grid_color       = '#3333CC';
 
     function GetColorList() {
         return array(
-            '#FF0000',
-            '#FF99FF',
-            '#AA0099',
-            '#FF00FF',
-            '#FF6666',
-            '#FF0099',
-            '#FFBB88',
-            '#AA2211',
-            '#FF6699',
-            '#BBAA88',
-            '#FF2200',
-            '#883333',
-            '#EE7777',
-            '#EE7711',
-            '#FF0066',
-            '#DD7711',
-            '#AA6600',
-            '#EE5500',
+            '#0066FF',
+            '#CCCCFF',
+            '#0000FF',
+            '#3366FF',
+            '#33CCFF',
+            '#660088',
+            '#3300FF',
+            '#0099FF',
+            '#6633FF',
+            '#0055EE',
+            '#2277EE',
+            '#3300FF',
+            '#AA00EE',
+            '#778899',
+            '#114499',
+            '#7744EE',
+            '#002288',
+            '#6666FF',
         );
     }
 
@@ -111,12 +111,8 @@ class RoseTheme extends Theme
     function PreStrokeApply($graph) {
         if ($graph->legend->HasItems()) {
             $img = $graph->img;
-            $graph->SetMargin(
-                $img->raw_left_margin, 
-                $img->raw_right_margin, 
-                $img->raw_top_margin, 
-                is_numeric($img->raw_bottom_margin) ? $img->raw_bottom_margin : $img->height * 0.25
-            );
+            $height = $img->height;
+            $graph->SetMargin($img->left_margin, $img->right_margin, $img->top_margin, $height * 0.25);
         }
     }
 
@@ -155,7 +151,7 @@ class RoseTheme extends Theme
             {
                 $plot->Clear();
 
-                $plot->SetColor($this->GetNextColor().'@0.4');
+                $plot->SetColor($this->GetNextColor());
                 $plot->SetWeight(2);
                 break;
             }

@@ -1,35 +1,35 @@
 <?php
 
 /**
-* Rose Theme class
+* Orange Theme class
 */
-class RoseTheme extends Theme 
+class OrangeTheme extends Theme 
 {
-    private $font_color       = '#CC0044';
-    private $background_color = '#FFDDDD';
-    private $axis_color       = '#CC0000';
-    private $grid_color       = '#CC3333';
+    private $font_color       = '#CC4400';
+    private $background_color = '#FFEEDD';
+    private $axis_color       = '#CC6600';
+    private $grid_color       = '#CC6633';
 
     function GetColorList() {
         return array(
-            '#FF0000',
-            '#FF99FF',
-            '#AA0099',
-            '#FF00FF',
-            '#FF6666',
-            '#FF0099',
-            '#FFBB88',
-            '#AA2211',
-            '#FF6699',
-            '#BBAA88',
-            '#FF2200',
-            '#883333',
-            '#EE7777',
-            '#EE7711',
-            '#FF0066',
-            '#DD7711',
+            '#FF9900',
+            '#FFCC00',
             '#AA6600',
-            '#EE5500',
+            '#CCCC00',
+            '#CC6600',
+            '#FFFF66',
+            '#CCFF00',
+            '#CC3300',
+            '#669933',
+            '#EE7700',
+            '#AAEE33',
+            '#77AA00',
+            '#CCFF99',
+            '#FF6633',
+            '#885500',
+            '#AADD00',
+            '#99CC44',
+            '#887711',
         );
     }
 
@@ -111,12 +111,8 @@ class RoseTheme extends Theme
     function PreStrokeApply($graph) {
         if ($graph->legend->HasItems()) {
             $img = $graph->img;
-            $graph->SetMargin(
-                $img->raw_left_margin, 
-                $img->raw_right_margin, 
-                $img->raw_top_margin, 
-                is_numeric($img->raw_bottom_margin) ? $img->raw_bottom_margin : $img->height * 0.25
-            );
+            $height = $img->height;
+            $graph->SetMargin($img->left_margin, $img->right_margin, $img->top_margin, $height * 0.25);
         }
     }
 

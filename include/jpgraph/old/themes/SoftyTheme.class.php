@@ -1,49 +1,52 @@
 <?php
 
 /**
-* Rose Theme class
+* Softy Theme class
 */
-class RoseTheme extends Theme 
+class SoftyTheme extends Theme 
 {
-    private $font_color       = '#CC0044';
-    private $background_color = '#FFDDDD';
-    private $axis_color       = '#CC0000';
-    private $grid_color       = '#CC3333';
+    protected $font_color       = '#000000';
+    protected $background_color = '#F7F8F4';
+    protected $axis_color       = '#000000';
+    protected $grid_color       = '#CCCCCC';
 
     function GetColorList() {
         return array(
-            '#FF0000',
-            '#FF99FF',
-            '#AA0099',
-            '#FF00FF',
-            '#FF6666',
-            '#FF0099',
-            '#FFBB88',
-            '#AA2211',
-            '#FF6699',
-            '#BBAA88',
-            '#FF2200',
-            '#883333',
-            '#EE7777',
-            '#EE7711',
-            '#FF0066',
-            '#DD7711',
-            '#AA6600',
-            '#EE5500',
+            '#CFE7FB',
+            '#F9D76F',
+            '#B9D566',
+            '#FFBB90',
+            '#66BBBB',
+            '#E69090',
+            '#BB90BB',
+            '#9AB67C',
+            '#D1CC66',
+
+/*
+
+            '#AFD8F8',
+            '#F6BD0F',
+            '#8BBA00',
+            '#FF8E46',
+            '#008E8E',
+
+            '#D64646',
+            '#8E468E',
+            '#588526',
+            '#B3AA00',
+            '#008ED6',
+
+            '#9D080D',
+            '#A186BE',
+            */
         );
     }
 
     function SetupGraph($graph) {
 
         // graph
-        /*
-        $img = $graph->img;
-        $height = $img->height;
-        $graph->SetMargin($img->left_margin, $img->right_margin, $img->top_margin, $height * 0.25);
-        */
         $graph->SetFrame(false);
         $graph->SetMarginColor('white');
-        $graph->SetBackgroundGradient($this->background_color, '#FFFFFF', GRAD_HOR, BGRAD_PLOT);
 
         // legend
         $graph->legend->SetFrameWeight(0);
@@ -69,9 +72,35 @@ class RoseTheme extends Theme
         $graph->yaxis->HideTicks();
         $graph->xaxis->SetTitleMargin(15);
 
+        // y2~
+        if (isset($graph->y2axis)) {
+            $graph->y2axis->title->SetColor($this->font_color);  
+            $graph->y2axis->SetColor($this->axis_color, $this->font_color);    
+            $graph->y2axis->SetTickSide(SIDE_LEFT);
+            $graph->y2axis->SetLabelMargin(8);
+            $graph->y2axis->HideLine();
+            $graph->y2axis->HideTicks();
+        }
+
+        // yn
+        if (isset($graph->y2axis)) {
+            foreach ($graph->ynaxis as $axis) {
+                $axis->title->SetColor($this->font_color);  
+                $axis->SetColor($this->axis_color, $this->font_color);    
+                $axis->SetTickSide(SIDE_LEFT);
+                $axis->SetLabelMargin(8);
+                $axis->HideLine();
+                $axis->HideTicks();
+            }
+        }
+
         // grid
         $graph->ygrid->SetColor($this->grid_color);
         $graph->ygrid->SetLineStyle('dotted');
+        $graph->ygrid->SetFill(true, '#FFFFFF', $this->background_color);
+        $graph->xgrid->Show();
+        $graph->xgrid->SetColor($this->grid_color);
+        $graph->xgrid->SetLineStyle('dotted');
 
 
         // font
@@ -88,17 +117,6 @@ class RoseTheme extends Theme
         // graph
         $graph->SetFrame(false);
 
-        // legend
-        $graph->legend->SetFillColor('white');
-        /*
-        $graph->legend->SetFrameWeight(0);
-        $graph->legend->Pos(0.5, 0.85, 'center', 'top');
-        $graph->legend->SetLayout(LEGEND_HOR);
-        $graph->legend->SetColumns(3);
-        */
-        $graph->legend->SetShadow(false);
-        $graph->legend->SetMarkAbsSize(5);
-
         // title
         $graph->title->SetColor($this->font_color);
         $graph->subtitle->SetColor($this->font_color);
@@ -111,12 +129,8 @@ class RoseTheme extends Theme
     function PreStrokeApply($graph) {
         if ($graph->legend->HasItems()) {
             $img = $graph->img;
-            $graph->SetMargin(
-                $img->raw_left_margin, 
-                $img->raw_right_margin, 
-                $img->raw_top_margin, 
-                is_numeric($img->raw_bottom_margin) ? $img->raw_bottom_margin : $img->height * 0.25
-            );
+            $graph->SetMargin($img->left_margin, $img->right_margin, $img->top_margin, $img->height * 0.25);
+//            $graph->SetMargin(200, $img->right_margin, $img->top_margin, $height * 0.25);
         }
     }
 
@@ -124,6 +138,36 @@ class RoseTheme extends Theme
 
         switch (get_class($plot))
         { 
+            case 'BarPlot':
+            {
+                $plot->Clear();
+
+                $color = $this->GetNextColor();
+                $plot->SetColor($color);
+                $plot->SetFillColor($color);
+                $plot->SetShadow('red', 3, 4, false);
+                $plot->value->SetAlign('center', 'center');
+                break;
+            }
+
+            case 'LinePlot':
+            {
+                $plot->Clear();
+
+                $plot->SetColor($this->GetNextColor());
+                $plot->SetWeight(2);
+//                $plot->SetBarCenter();
+                break;
+            }
+
+            case 'PiePlot':
+            {
+                $plot->ShowBorder(false);
+                $plot->SetSliceColors($this->GetThemeColors());
+                break;
+            }
+
+
             case 'GroupBarPlot':
             {
                 foreach ($plot->plots as $_plot) {
@@ -134,38 +178,19 @@ class RoseTheme extends Theme
 
             case 'AccBarPlot':
             {
+                $plot->value->SetAlign('center', 'center');
                 foreach ($plot->plots as $_plot) {
                     $this->ApplyPlot($_plot);
+                    $_plot->SetValuePos('center');
                 }
                 break;
             }
 
-            case 'BarPlot':
+            case 'ScatterPlot':
             {
-                $plot->Clear();
-
-                $color = $this->GetNextColor();
-                $plot->SetColor($color);
-                $plot->SetFillColor($color);
-                $plot->SetShadow('red', 3, 4, false);
                 break;
             }
 
-            case 'LinePlot':
-            {
-                $plot->Clear();
-
-                $plot->SetColor($this->GetNextColor().'@0.4');
-                $plot->SetWeight(2);
-                break;
-            }
-
-            case 'PiePlot':
-            {
-                $plot->ShowBorder(false);
-                $plot->SetSliceColors($this->GetThemeColors());
-                break;
-            }
 
             case 'PiePlot3D':
             {
