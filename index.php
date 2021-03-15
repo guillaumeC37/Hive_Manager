@@ -3,7 +3,7 @@
  * 																	 *
  * Nom de la page :	index.php										 *
  * Date création :													 *
- * Date Modification :	10/03/2017									 *
+ * Date Modification :	31/12/2020									 *
  * Créateur : Guillaume Crégut										 *
  * Version :	0.2A												 *
  * Objet et notes :													 *
@@ -78,7 +78,7 @@ if ($VersionOk)
 		  $_SESSION['ID_API']=$ID_Apiculteur;
 		  $InSession=true;
 		  //Vidage du répertoire temporaire
-		  $Document=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$ID_Apiculteur/temp/";
+		  $Document=$_SERVER['DOCUMENT_ROOT']."/documents/$ID_Apiculteur/temp/";
 		  $D=opendir($Document);
 		  while ($e=readdir($D))
 		  {
@@ -95,7 +95,7 @@ if ($VersionOk)
 		  {
 			 array_push($TabSQL,$row['Nom_Template']); 
 		  }
-		  $Rep=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/style";
+		  $Rep=$_SERVER['DOCUMENT_ROOT']."/style";
 		  $D=opendir($Rep);
 		  rewinddir($D);
 		  while ($e=readdir($D))

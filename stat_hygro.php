@@ -151,7 +151,7 @@ echo "</pre>";
 						array_multisort($Date,SORT_ASC,$Hygro,SORT_ASC,$TabTotal);
 						//Génération du graphe
 						$Titre="Relevé hygrométrique de la ruche '$NomRuche' sur la période du $DateDebutAff au $DateFinAff";
-						$Racine=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$Id_Api/temp/";
+						$Racine=$_SERVER['DOCUMENT_ROOT']."/documents/$Id_Api/temp/";
 						//Si jamais le répertoire n'existe pas (il est normalement créé à l'enregistrement de l'apiculteur sur le système
 						if(!is_dir($Racine))
 						{

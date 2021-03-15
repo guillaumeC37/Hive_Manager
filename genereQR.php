@@ -3,7 +3,7 @@
  * 																	 *
  * Nom de la page :	Génère QR Code.php								 *
  * Date création :	25/02/2017										 *
- * Date Modification :												 *
+ * Date Modification : 31/12/2020									 *
  * Créateur : Guillaume Crégut										 *													
  * Version :	0.2A												 *
  * Objet et notes :	Génère le QR Code de la ruche sélectionnée		 *
@@ -53,7 +53,7 @@
 			$CheminQR=$Racine.'cvwcvwdfgfgdgsdfg.png';//nom de fichier inexistant
 		}
 		//Création de l'image à imprimer :
-		$font='include/arial.ttf';
+		$font=$_SERVER['DOCUMENT_ROOT'].'/include/arial.ttf';
 		if (file_exists($CheminQR))
 		{
 			$taille=getimagesize($CheminQR);
@@ -96,7 +96,7 @@
 		$NewY+=$MargeH/2+$TailleTexte;
 		imagettftext($image,$TailleFont,0,$MargeW,$NewY,$Noir,$font,'Numéro de rucher : '.$NumRucher);
 		imagepng($image);
-		
+
 		//Destroy des images
 		imagedestroy($QRImg);
 		imagedestroy($image);

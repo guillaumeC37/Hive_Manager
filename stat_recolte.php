@@ -184,7 +184,7 @@ echo "</pre>";
 				}
 				$DateDebutAff=convertDate($DateGDebut,1);
 				$Titre="Relevé des récoltes de la ruche '$NomRuche' sur la période du $DateDebutAff au $DateFinAff";
-				$Racine=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$Id_Api/temp/";
+				$Racine=$_SERVER['DOCUMENT_ROOT']."/documents/$Id_Api/temp/";
 				if(!is_dir($Racine))
 				{
 					mkdir($Racine);
