@@ -30,7 +30,7 @@
 			$Id_Api=$_SESSION['ID_API']; //On en a besoin pour la génération du fichier graphique
 			$DBConn=connectbase($userdb,$passdb,$servdb,$nomdb);
 			//répertoire des images
-			$GraphDir=$_SERVER['DOCUMENT_ROOT']."Gestion_rucher/documents/$Id_Api/temp/bilan/";
+			$GraphDir=$_SERVER['DOCUMENT_ROOT']."/documents/$Id_Api/temp/bilan/";
 			if(!is_dir($GraphDir))
 			{
 				mkdir($GraphDir);
