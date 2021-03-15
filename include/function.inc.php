@@ -12,6 +12,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
  function connectbase($user,$pass,$serveur,$base)
 {
+	/*new PDO('mysql:host='.$this->host.';dbname='.$this->base,$this->user,$this->password,array( PDO::ATTR_PERSISTENT => true,PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));*/
 	$temp=new PDO('mysql:host='.$serveur.';dbname='.$base,$user,$pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 	return $temp;
 }
